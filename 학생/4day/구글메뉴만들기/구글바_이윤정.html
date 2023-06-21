@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글index</title>
+</head>
+
+<style>
+
+    .header{
+        height: 150px;
+        background-color: rgb(205, 241, 255) ;
+        margin-top: 80px;
+
+        position: relative;
+    }
+
+    .menu{
+        width: 300px;
+        height: 80px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .item1{
+
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+        text-align: center;
+        line-height: 50px;
+        margin-left: 5px;
+    }
+
+    .item1:hover{
+        background-color: antiquewhite;
+    }
+
+
+    .item2{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+        text-align: center;
+        line-height: 50px;
+        margin-left: 5px;
+        background-color: green;
+        margin-left: 10px;
+        font-weight: bold;
+        color: white;
+        font-size: large;
+        
+    }
+
+    .item2:hover{
+        box-shadow: 0px 0px 10px 0px green;
+    }
+
+    .wrap{
+        width: 1365px;
+        height: 150px;
+        text-align: center;
+
+        margin-top: 80px;
+        margin-left: 250px;
+    }
+
+    img{
+        width: 272px;
+        height: 92px;
+    }
+
+    input{
+     
+     width: 500px;
+     height: 45px;
+   
+     
+     font-size: 15px;
+     border: 0px;
+     outline: 0px;
+ 
+ }
+
+ 
+
+
+
+    .search_bar{
+        width: 600px;
+        height: 50px;
+        margin-left: 30px;
+        border: 1px solid gray;
+        text-align: center;
+
+        border-radius: 30px;
+        margin: 0 auto;
+       
+    }
+
+
+    .search_bar:hover{
+
+        box-shadow: 0px 0px 10px 0px gray;
+    }
+    
+
+
+</style>
+
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="item1">Gmail</div>
+            <div class="item1">로그인</div>
+            <div class="item1">이미지</div>
+            <div class="item2">YJ</div>           
+        </div>
+    </div>
+    <div class="wrap">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    </div>
+    <div class="search_bar">
+        <input type="text">
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            text-align: center;
+            border: 3px solid lightgray;
+            border-radius: 10px;
+            background-image: url("https://img.freepik.com/premium-vector/watercolor-abstract-background_583264-55.jpg");
+            background-size: cover;
+            background-position: center;
+
+            position: relative;
+
+        }
+        h2{
+            margin-top: 40px;
+        }
+        .button{
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin:20px;
+        }
+        .button:hover{
+            position: relative;
+            bottom: 10px;
+        }
+        .button_wrap{
+            display: flex;
+
+            position: relative;
+            left: 20px;
+            top: 10px;
+        }
+        .button_1{
+            background-color: rgb(245, 206, 212);
+            border: 3px solid rgb(250, 157, 222);
+        }
+        .button_1:hover{
+            background-color: rgb(247, 154, 231);
+        }
+        .button_2{
+            background-color: rgb(200, 236, 253);
+            border: 3px solid rgb(57, 178, 235);
+        }
+        .button_2:active{
+            background-image: url("https://images.freeimages.com/images/large-previews/1f3/blue-sky-1193744.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .button_3{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSQhdDI2Ch_Qba4tc5Ep9BnhUhM3ESBatxgZHpASDzlTTAJpDK5Wb8iDumijIoAoZeXiQ&usqp=CAU");
+            background-size: cover;
+            background-position: center;
+            border: 3px solid rgb(207, 157, 19);
+        }
+        .long_button{
+            width: 300px;
+            background-color: rgb(209, 247, 191);
+            border: 3px solid rgb(47, 153, 65);
+
+            position: absolute;
+            bottom: 10px;
+            left: 30px; 
+        }
+        .long_button:hover{
+            background-color: rgb(31, 245, 227);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <h2>div를 사용해서 나만의 버튼만들기</h2>
+    
+        <div class="button_wrap">
+            <div class="button button_1">♥버튼♥</div>
+            <div class="button button_2">눌러보세요</div>
+            <div class="button button_3">버튼</div>
+        </div>
+        <div class="button long_button"> 디자인이 생각이 안나요 </div>
+    </div>
+    
+  
+
+</body>
+</html>

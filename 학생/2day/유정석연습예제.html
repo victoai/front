@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 550px;
+            height: 1050px;
+            border: 1px solid gray; 
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .wrap_img{
+            width: 300px;
+            height: 300px;
+          
+            margin: 0 auto;
+            background-image: url(./황테.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        .wrap_intro{
+            width: 500px;
+            height: 250px;
+            margin: 0 auto;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .wrap_info{
+            width: 500px;
+            height: 350px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 50px;    
+            text-align: center;     
+        }
+        input{
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+        button{
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+            background-color: skyblue;
+            margin: 0 auto;
+            margin-top: 10px;        
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <div class="wrap_img">
+        </div>
+
+        <div class="wrap_intro">
+            <h1> 대관령 황태 </h1>
+            <p>겨울 내내 녹았다 얼었다를 반복한 맛 좋은 대관령 황태입니다.</p>
+            <br>
+            <p> 가격:30,000원 / 10마리 </p>
+            <br>            
+        </div>
+
+        <div class="wrap_info">
+            <p> --주문내역-- </p>
+            주문자이름<br>
+            <input type="text" placeholder="주문자성명을 입력하세요.">
+            <br>
+            주소<br>
+            <input type="text" placeholder="주소를 입력하세요.">
+            <br>
+            수량<br>
+            <select>
+                <option> 선택하세요 </option>
+                <option> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> 5 </option>
+            </select>
+            <br>
+            입금금액<br>
+            <input type="text" placeholder="금액을 입력하세요.">
+            <br>
+            연락처<br>
+            <input type="text" placeholder="연락처를 입력하세요.">
+            <br>
+            <button> ORDER </button>
+            <br>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h2>공간태그 : div</h2> -->
+    <div class="wrap">
+      <!-- 이미지 영역 -->
+      <!-- <img src="../imige/signin_106368.png" style=""/> -->
+      <div class="img_wrap"></div>
+      <!-- 사진 설명 -->
+      <br />
+      <div style="margin-left: 15%">
+        <h2>대관령 황태</h2>
+        <p>내용 설명1</p>
+        <p>내용 설명2</p>
+        <br />
+        <p>--주문 내역--</p>
+      </div>
+      <!-- 정보 영역 -->
+      <div class="info_wrap">
+        <p style="margin-bottom: 0px">주문자이름</p>
+        <input type="text" />
+        <p style="margin-bottom: 0px">수량</p>
+        <select style="width: 98.8%; height: 38px">
+          <option>수량을 선택하세요</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+        <p style="margin-bottom: 0px">주문금액</p>
+        <input type="text" />
+        <p style="margin-bottom: 0px">전화번호</p>
+        <input type="text" />
+        <!-- <button>로그인</button> -->
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  .wrap {
+    width: 700px;
+    height: 830px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+  .img_wrap {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+
+    background-image: url(./asdf.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  .info_wrap {
+    width: 500px;
+    padding: 20px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+  }
+  .exp_wrap {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 1px auto;
+  }
+
+  input {
+    width: 97%;
+    height: 30px;
+    margin-top: 5px;
+  }
+  button {
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    border: 0px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+  }
+</style>

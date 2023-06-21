@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrap{
+
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box{
+            width: 100px;
+            height: 100px;          
+            border: 1px solid salmon;
+            position: absolute;
+            color: cornflowerblue;
+            background-color: #091757;
+        }
+        .a1:hover{
+            background-color: sienna;
+            border-radius: 150px;
+            bottom:482px;
+            right: 333px;
+        }
+        .a2:hover{
+            background-color: red;
+            top:200px;
+            left: 240px;
+            border-radius: 150px;
+        }
+        .a3:hover{
+            background-color: purple;
+            border-radius: 150px;
+            bottom:300px;
+            right: 360px;
+        }
+        .a4:active{
+            background-color: violet;
+            top:320px;
+            right: 261px;    
+            border-radius: 150px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h2> div를 사용해서 나만의 버튼 만들기 </h2>
+
+    <div class="wrap">
+
+        <div><button class="box a1">좋</button></div>
+
+        <div><button class="box a2">댓</button></div>
+
+        <div><button class="box a3">구</button></div>
+
+        <div><button class="box a4">알</button></div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .wrap{
+            width: 600px;
+            margin: 0 auto;
+            border: 5px solid darkgreen;
+        }
+        img{
+            height:300px;
+            width: 300px;
+            border-radius: 20px;
+        }
+
+        .img_wrap{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .order_info_content{
+            text-align: center;
+            background-color: green;
+            color: white;
+            border-radius: 25px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 500px;
+
+        }
+
+        .order_info_wrap{
+            text-align: center;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input_content{
+            text-align: left;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .item{
+            text-align: left;
+        }
+        
+        fieldset{
+            text-align: center;
+        }
+
+        .order_form_wrap{
+            text-align: center;
+            padding : 10px;
+        }
+
+        .textarea{
+            padding: 10px;
+        }
+
+        .filedset{
+            padding: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+
+        <div class="img_wrap">
+            <img src = "https://cdn.class101.net/images/6de49fbf-68a7-49b8-98bf-4ed5e0a56011"/>
+        </div>
+
+        <div class="order_info_wrap">
+            <div class="order_info_content">
+                <h2>네이버 스마트 스토어</h2>
+                <p>네이버에서 간편하게 구입하세요</p>
+                <p>최저가 보상 제도!</p>
+            </div>
+        </div>
+        
+
+        <div class="order_form_wrap">
+            <div class ="input_content">
+            품목<br>
+            <input type="text" placeholder="입력하세요">
+            <select>
+                <option>1
+                </option>
+                <option>2
+                </option>
+                <option>3
+                </option>
+                <option>4
+                </option>
+                <option>5
+                </option>
+            </select>
+
+            <input type="checkbox"> 해외배송
+            <input type="checkbox"> 국내배송
+
+            </div>
+            <div class="filedset">
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for ="user-name">이름</label> : <input type="text" id="user-name"><br>
+                <label for = "user-addr">주소</label> : <input type="text" id="user-addr"><br>
+                <label for = "user-phone">번호</label> : <input type="text" id="user-phone">
+            </fieldset>
+        </div>
+
+            <div class="textarea"><textarea cols="50" row="50">문의사항</textarea><br></div>
+            
+
+
+            
+            <button>주문하기</button>
+
+            
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

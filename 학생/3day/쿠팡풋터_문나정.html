@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer{
+            padding: 50px;
+            width:1300px;
+        }
+        .footer1{
+            display: flex;
+            font-size: 13px;
+        }
+        .f1-item1 img{
+            width:150px;
+            height:50px;
+        }
+        .f1-item1{
+            width:15%;
+            
+        }
+        .f1-item2{
+            width:25%;
+            
+        }
+        .f1-item3{
+            width:30%;
+            
+        }
+        .f1-item4{
+            width:30%;
+            
+        }
+        .footer2{
+            display: flex;
+        }
+      
+        .f2-item1{
+            width:30%;
+            
+        }
+        .f2-item2{
+            width:20%;
+            
+        }
+        .f2-item3{
+            width:15%;
+           
+        }
+        .f2-item4{
+            width:5%;
+            
+        }
+        .f2-item5{
+            width:5%;
+            
+        }
+        .footer3{
+            display: flex;
+            background-color: rgb(73, 70, 70);
+            color: white;
+            font-size: 13px;
+            height:100px;
+        }
+        .f3-item1{
+            width: 1100px;
+            margin-left:5px;
+            
+        }
+        .f3-item2{
+            width:200px;
+            margin-top: 17px;
+            margin-left: 20px;
+            
+        }
+        .num{
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .facebook img{
+            width:50px;
+            height:50px;
+
+        }
+        
+        .naver img{
+            width:45px;
+            height:45px;
+            margin-bottom: 2px;
+        }
+       
+        .insta img{
+            width:42px;
+            height:42px;
+            margin-bottom: 4px;
+            margin-left: 4px;
+        }
+        
+        .img1{
+            width:100%;
+            height:80px;
+        }
+        .img2{
+            width:100%;
+            height:80px;
+        }
+        .img3{
+            width:100%;
+            height:80px;
+        }
+        .img4{
+            width:100%;
+            height:80px;
+        }
+        .img5{
+            width:100%;
+            height:80px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="footer">
+        <div class ="footer1">
+            <!--이미지-->
+            <div class="f1-item1">
+                <a href="https://www.coupang.com/">
+                  <img src="data:image/png;base64,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">  
+                </a>   
+            </div>
+            <!--정보-->
+            <div class="f1-item2">
+                상호명 및 호스팅 서비스 제공 : 쿠팡(주)<br>
+                대표이사 : 강한승,박대준<br>
+                서울시 송파구 송파대로 570<br>
+                사업자 등록번호 : 120-88-00767<br>
+                통신판매업신고 : 2017-서울송파-0680<br>
+                <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208800767&apv_perm_no=">사업자정보 확인 ></a>
+            </div>
+            <!--고객센터-->
+            <div class="f1-item3">
+                <b>365고객센터</b> | 전자금융거래분쟁처리담당<br>
+                <span class="num">1577-7011 (유료)</span><br>
+                서울시 송파구 송파대로 570<br>
+                email: help@coupang.com
+               
+            </div>
+            <!--채무지급-->
+            <div class="f1-item4">
+                우리은행 채무지급보증 안내<br>
+                당사는 고객님이 현금 결제한 금액에 대해<br>
+                우리은행과 채무지급보증 계약을 체결하여<br>
+                안전거래를 보장하고 있습니다.<br>
+                <a href="https://www.coupang.com/np/etc/popWooriService" target="_blank">서비스가입사실 확인 ></a>
+            </div>
+        </div>
+        <div class ="footer2">
+            <!--이미지1-->
+            <div class = "f2-item1">
+                <img class="img1" src="coupang_img\인증범위.png">
+            </div>
+            <!--이미지2-->
+            <div class = "f2-item1">
+                <img class="img2" src="coupang_img\2_정보보안.png">
+            </div>
+            <!--이미지3-->
+            <div class = "f2-item1">
+                <img class="img3" src="coupang_img\3_개인정보보호.png">
+            </div>
+            <!--이미지4-->
+            <div class = "f2-item1">
+                <img class="img4"src="coupang_img\4_운영매장.png">
+            </div>
+            <!--이미지4-->
+            <div class = "f2-item1">
+                <img class="img5" src="coupang_img\5.png">
+            </div>
+        </div>
+        <div class ="footer3">
+            <!--설명-->
+            <div class="f3-item1">
+                사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.<br>
+                마켓플레이스(오픈마켓) 상품의 경우 쿠팡은 통신판매중개자이며 통신판매의 당사자가 아닙니다.<br>
+                쿠팡은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여 책임을 지지 않습니다.<br>
+                쿠팡은 소비자 보호와 안전거래를 위해 신뢰관리센터(CM112@coupang.com)를 운영하고 있으며, 관련 분쟁이 발생할 경우 별도의 분쟁 처리절차에 의거 분쟁이 처리됩니다.<br>
+                Copyright © Coupang Corp. 2010-2022 All Rights Reserved.
+            </div>
+            <!--sns아이콘-->
+            <div class="f3-item2">
+                <a class = "facebook" href="https://www.facebook.com/Coupang.korea">
+                    <img  src="coupang_img\페이스북.png">
+                </a>
+                <a class="naver" href="https://news.coupang.com/">
+                    <img src="coupang_img\네이버.png">
+                </a>
+                <a class="insta" href="https://www.instagram.com/coupang/">
+                    <img src="coupang_img\인스타.png">
+                </a>
+    
+            </div>
+            
+        </div>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

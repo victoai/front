@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 500px;
+          
+            padding: 10px;
+            border: 1px solid rgba(172, 112, 15, 0.774);
+            border-radius: 10px;
+            margin:0 auto;
+     
+        }
+
+        .img_wrap{
+            width: 350px;
+            height: 350px;
+         
+            background-image: url(https://t1.daumcdn.net/cfile/tistory/9931C6375E5854B11A);
+            background-position : left;
+            background-size: cover;
+            margin: 0 auto;
+         
+        }
+
+        .info_wrap{
+            width: 400px;     
+            border:0.5px solid rgb(172, 112, 15,0.774);
+            border-radius: 10px;
+            margin: 0 auto;
+            
+        }
+        input{
+            width:95%;
+            height: 20px;
+            margin: 5px;
+        }
+        button{
+            width: 97%;
+            height: 40px;
+            border: 5px;
+            background-color: rgb(107, 107, 107);
+            border-radius: 5px;           
+            display: block;
+            margin: 0 auto;
+        }
+        select{
+            width: 97%;
+            height: 30px;
+            margin: 5px;
+        }
+
+
+
+        .title{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="img_wrap"></div>
+
+        <div class="info_wrap">
+            <h3>대관령 황태</h3>
+            
+            <p class="title">겨울 내내 녹았다 얼었다를 반복한 맛 좋은 대관령 황태입니다.</p>
+            
+            가격 :30000원/10마리
+            
+            
+            <p>--주문내역--</p>
+
+            <p>주문자이름<br>
+            <input type="text" id="user-name"></p>
+
+            <p>수량<br>
+                <select>
+                <option>수량을선택하세요</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+            </select></p>
+
+
+            <p>주문금액<br>
+            <input type="text" id="user-name"></p>
+
+            <p>전화번호<br>
+            <input type="text" id="user-name"></p>
+
+            <p> <button>주문</button></p>
+
+        </div>
+
+    </div>    
+</body>
+</html>

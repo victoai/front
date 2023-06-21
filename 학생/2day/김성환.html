@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            border: 1px solid black;
+            width: 500px;
+            padding: 20px;
+        }
+        .img_wrap{
+            width: 350px;
+            height: 350px;
+            margin: 0 auto;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1umEbHZlosppCmH5HhIZ4y3h9-Q9t3Yhl3A&usqp=CAU);
+            background-size: cover;
+            background-position: center;
+        }
+        .info_wrap1{
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .info_wrap2{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        input{
+            width: 80%;
+            height: 20px;
+        }
+        button{
+            width: 82%;
+            height: 30px;
+            margin-top: 30px;
+            border-radius: 5px;
+            background-color: gray;
+        }
+        p{
+            margin-bottom: auto;
+        }
+        select{
+            width: 82%;
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- 전체 영역 -->
+    <div class="wrap">
+        <!-- 이미지 영역 -->
+        <div class="img_wrap"></div>
+        <!-- 상품정보 영역-->
+        <div class="info_wrap1">
+            <h2>대관령 황태</h2>
+            <p>맛 좋은 대관령 황태입니다.</p>
+            <p>가격 : 30000원/10마리</p>
+            <p>--주문내역--</p>
+        </div>
+        <!-- 주문정보 영역-->
+        <div class="info_wrap2">
+            <p>주문자 이름</p><br>
+            <input type="text">
+            <p>수량</p>
+            <select>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+            </select>
+            <p>주문금액</p><br>
+            <input type="text">
+            <p>전화번호</p><br>
+            <input type="text"><br>
+            <button>주문하기</button>
+        </div>
+    </div>
+    
+</body>
+</html>

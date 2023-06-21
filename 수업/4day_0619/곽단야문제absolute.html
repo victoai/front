@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .board{
+            border: 1px solid black;
+            margin: 5px;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(215, 106, 216);
+            color: white;
+            text-align: center;
+            display: inline-block;
+            position: absolute;          
+            line-height: 50px;
+        }
+               
+        .div1{
+            bottom: 10px;
+            left: 50px;  
+        }
+
+
+        .div2{          
+            top: 10px;
+            left: 100px;
+        }
+
+        .div3{           
+            top: 220px;
+            left: 230px;    
+           
+        }
+
+        .div4{           
+            top: 10px;
+            left: 430px;             
+        }
+
+
+        .div5{           
+            bottom: 10px;
+            left: 400px;             
+        }
+
+        div:hover{
+            position: relative;
+            left: 5px;
+            top: 5px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <p><h2>board판을 기준(부모영역을 기준으로)으로 <mark>각 box를 마음대로 붙이려면....</mark></h2></p>    
+
+    <div class="board">
+        <div class="box div1">E</div>
+        <div class="box div2">O</div>
+        <div class="box div3">L</div>
+        <div class="box div4">L</div>
+        <div class="box div5">H</div>    
+    </div>
+
+</body>
+</html>

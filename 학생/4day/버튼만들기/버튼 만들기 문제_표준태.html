@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 1000px;
+            height: 2000px;
+            border: 1px solid black;
+            margin: 0 auto;
+          
+        }
+        .b_wrap{
+            width: 250px;
+            height: 250px;
+            position: fixed;
+            bottom: 20px;
+            right: 60px;
+        }
+        .b{
+            width: 110px;
+            height: 110px;
+            display: inline-block;
+
+        }
+        .b_1{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border-radius:20px;
+        }
+        img{
+           
+        }
+    </style>
+</head>
+<body>
+    <h2> div를 사용해서 나만의 버튼 만들기</h2>
+    <div class="wrap">
+        
+        <div class="a"></div>
+        <div class="b_wrap" >
+            <div class="b">
+                <a href="http://www.naver.com"><button class="b_1" >홈</button></a>
+            </div>
+            <div class="b">
+                <a href="https://map.naver.com/v5/?c=15,0,0,0,dh"><button class="b_1" >지도</button></a>
+            </div>
+            <div class="b">
+                <a href="https://shopping.naver.com/home"><button class="b_1" >쇼핑</button></a>
+            </div>
+            <div class="b">
+                <a href="https://comic.naver.com/index"><button class="b_1" >웹툰
+                </button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

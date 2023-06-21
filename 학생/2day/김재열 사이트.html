@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .wrap {
+      width: 800px;
+      padding: 20px;
+      border: 1px solid black;
+      margin: 0 auto;
+    }
+    .img_wrap {
+      width: 350px;
+      height: 350px;
+      border: 1px solid black;
+      margin: 0 auto;
+      background-image: url(./황태.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .info_wrap {
+      width: 50%;
+      margin-left: 28%;
+    }
+    button {
+      width: 150px;
+      height: 30px;
+      font-size: larger;
+    }
+
+    select {
+      width: 150px;
+      height: 30px;
+      margin-bottom: 10px;
+      font-size: larger;
+    }
+
+    input {
+      width: 90%;
+      height: 45px;
+      margin: 0;
+    }
+
+    legend {
+      font-size: 20px;
+    }
+
+    fieldset {
+      border: 0px;
+      margin-left: -12px;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="img_wrap">
+        <!-- 로그인 정보 영역 -->
+      </div>
+      <h1 style="text-align: center">대관령 황태</h1>
+      <p style="text-align: center; font-size: larger">
+        평창올림픽의 메카 대관령 800고지 황태덕장에서<br />
+        3개월이상 얼었다 녹았다 수천번을 반복하여 자연숙성된<br />
+        감칠맛나는 현대인의 건강식품 대관령 하늘찬 황태!<br />
+        대관령의 바람과 햇살이 빚은 건강한 먹거리입니다.
+      </p>
+
+      <hr />
+
+      <p style="text-align: center; font-size: 30px; margin-bottom: 1">
+        주문내역
+      </p>
+
+      <div class="info_wrap">
+        <button>사이즈</button>
+        <select>
+          <option>선택하세요</option>
+          <option>소</option>
+          <option>중</option>
+          <option>대</option>
+        </select>
+        <br />
+
+        <button>수량</button>
+        <select>
+          <option>선택하세요</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+
+        <fieldset>
+          <label for="user-name;" style="font-size: 23px">주문자 이름</label> :
+          <input type="text" id="user-name" />
+        </fieldset>
+        <fieldset>
+          <label for="user-name;" style="font-size: 23px">배송지 입력</label> :
+          <input type="text" id="user-name" />
+        </fieldset>
+        <fieldset>
+          <label for="user-name;" style="font-size: 23px">전화번호</label> :
+          <input type="text" id="user-name" />
+        </fieldset>
+
+        <button style="margin: -1px; font-size: larger">결제</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            border: 1px solid gray;
+           
+            height: 1000px;
+            width: 500px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+        .wrap_img{
+            border-radius: 5px;
+            height: 350px;
+            width: 350px;
+            margin: 0 auto;
+            margin-top: 30px;
+            background-size: 350px;
+            background-image: url(./겨울\ 황태.png)
+        }
+        .wrap_inpo{
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .wrap_id{
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 50px; 
+            
+        }
+        input{
+           width: 98.5%;
+           height: 30px;
+        }
+        button{
+            margin-top: 20px;
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap_img">
+        </div>
+        <div class="wrap_inpo">
+            <h2>50년 전통 황태</h2>
+            <p>3대를 이어온 황태 <br>믿고 주문해 주세요!</p>
+            <h6>1box 35000원</h6>
+        </div>
+        <div class="wrap_id"> 
+            <p> --주문 내역--</p>
+
+            이름 <br>
+            <input type="text" placeholder="이름을 적어주세요."><br>
+
+            주소 <br>
+            <input type="text" placeholder="주소를 적어주세요."><br>
+
+            전화번호 <br>
+            <input type="text" placeholder="전화번호를 적어주세요."><br>
+
+            수량 <br>
+            <input type="text" list="choice" placeholder="수량을 정해주세요.">
+            <datalist id="choice">
+                 <option value="1box"></option>
+                 <option value="2box"></option>
+                 <option value="3box"></option>
+                 <option value="직접입력"></option>
+            </datalist>
+
+            <button>주문하기</button>
+        </div>
+    </div>
+</body>
+</html>

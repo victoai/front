@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.wrap{
+
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+
+    position: relative;
+
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    left: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+
+    right: 5px;
+    display: inline-block;
+     
+}
+
+
+.box3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 300px;
+    left: 350px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+
+.box4{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    background-color: blue;
+    top: 680px;
+    left: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+.box5{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    background-color: blue;
+    top: 680px;
+    right: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+
+</style>
+<body>
+    <h2>border판을 기준(부모 영역을 기준)으로 <mark>각 box를 마음대로 붙이려면...</mark></h2>
+    <div class="wrap">
+        <div class="box1">O</div>
+        <div class="box2">H</div>
+        <div class="box3">L</div>
+        <div class="box4">M</div>
+        <div class="box5">S</div>
+    </div>
+</body>
+</html>

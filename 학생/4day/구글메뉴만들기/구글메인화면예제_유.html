@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .EMT{
+            height: 100px;
+        }
+
+        .head{
+            height: 150px;
+            background-color: rgb(250, 239, 220);
+            position: relative           
+        }
+        .menu{
+            position: absolute;
+            display: flex;
+            bottom: 0%;
+            right: 0%;
+        }
+        .item1{
+            margin-left: 20px;
+            line-height: 40px;
+            text-align: center;
+
+        }
+        .item2{
+            margin-left: 20px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            line-height: 40px;
+            background-color: rgb(230, 225, 225);
+        }
+        .body{
+            height: 500px;
+            position: relative;            
+        }
+        .logo{
+            width: 500px;
+            height: 250px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/010/930/001/original/google-logo-icon-illustration-free-vector.jpg);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            right: 35%;
+            bottom: 35%;
+        }
+        .search-bar{
+            width: 600px;
+            height: 60px;
+            border: 1px solid black;
+            display: flex;
+            position: relative;
+            border-radius: 25px;
+            position: absolute;
+            right: 33%;
+            bottom: 33%;
+            padding: 0.3%;
+
+        }
+        .search-btn{
+            width: 45px;
+            height: 49px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAgVBMVEX///8AAADq6ur19fWOjo7FxcXz8/Pv7+/8/Pynp6dhYWGKior39/eFhYXJyclZWVm2tracnJzm5ubHx8fZ2dkrKysQEBC8vLxCQkJmZmYMDAx4eHiWlpapqakTExNxcXFNTU1QUFAiIiI2NjYaGhp9fX0lJSVsbGzV1dVGRkY8PDxptrQ0AAAHwElEQVR4nO2diVriPBSGqSxCKWAVEEHEZVzG+7/A3/4wowxtz5KzpDx9LyDJB21zcrZ0Oi0tLS0tLS0tLS0tLS0tMnTn/W1vk64Wy2TPYpXuxqPbeea9snA+tpOnpIbH16u59xq5DPvjVZ22b1a96dB7tVSu8984cX9F5tfea8Yz7/2iqdvzMG7E0zrInznq9jznl97rB+g/8dXtmd14a6hhtA6VV7AeeesoJ+tJqNvTi2+H7E7k5BVMut6KjhiOZeUVjCPaG0fy8gpieRenS3itPJZTb21fDGZa8gpmA299Sk/nN77P6SXSnA5h5WjcXOnLK7jy0ndnoy9J7lzkXYvYZTjWDmepWzt5BbfW+oQtM5iJrT7Vza+cmaG84Yu9viR5MTNOu2q2WT1LoxPGpY+8ApM9/8JPX5JcnLk+g/+w66svSbTfQ5bHU5Kl7rfUZX845kVTn8P+forijq/gWuKgZrXx7et1Ot7ezC+y/fvTvSgChilfoZLlfc1bzWM+rXDjdqf5I29MndMT5/y36UOj3mwYw6419NHP7ykyjtKnP62pvD6y/6VH8PgN7qmji/tpBsQFkL19VP+jtM1Gi0jfc6ag/YsrWX1bytx3THsxI73mW0l9JBP7gz/PB2UeSbOb8JnbhM1E2DQETbYpflZw34Po4+eSiz2hz0gLgW/bYIGd7Vf4ZHvQX3Ch7Rf9rZGKPGHnE7Py0ekMttMJRvKwu1JPYrIMOZmo8YQ1DCXSTZBRCOEzGvLsKfBWIP9AceMX+R+G/4W4N1DUbtqD+3aHv4WoacYCgk7AeYBCZ0H9jgrHzwKUgRj67GD8FAsROSVgbJpA78UN5kdUixeg4lhh+aUYT2+wfV0NxvIOOlRgfsKdlJoydogFhDxAOWJ8MTGlIBaQBwyPyC9XTghEHEWf+aPP4dHVk5AQZyd+NQJiq1XPC0C4g/hmBpxNwfIP0oC9iQ/coRFPqKSSKuBVcGMx8Dc05AMWwTJgb7aokErAZfzmjTsEBxbxGMDAJzZeYgJsJxlljMOBH561CP5wSqekU8BzE+9RAhPOFa3sY8BniRdqgkY1+sSoLQXcBQPDLBTAkAzHWgOdr2ZPKOIZ5Tj1XqFBxWXUAK3llTEmtM0/CmuoBcqn4Wz10I9mYGd/A1rc9CHB3dW09A0899KPbeBH1LQGFTwV0j+jYPRDQUYN0GrosR/IpW1Zp9GB/Zf04CTkrlAJR1guB/JIKsST6oDMDrp3FnomjDsyQLYM/Y35BEY07hwCfdQ/ySO+ASMa1KD8BKpHeSOPCAxouw0iNkLyiOIDhgE6iMgjRiZQfj2tQGNagdIDGnd7sf/IGDclAhOuyCNCKRzGvQmguiJ6KsvZm2qQsW3oNCyQN7Ybdlx6J4/YsAMvPXEUclmYhZb2QG8MPch79k6nhrkN6fVEDXP8Ms7f0JBNd903K/jCycmNKXwGmtqcnM5GBUA5qUBgsWJMIWzWFw8aNKYkBNae1aA0El6+IZgtGk8iEC9vHC4pMOobCafG8yqnGpSMx4wjwM1DZYVUAS6DW/3SmIRYbhVhY1Ka2XY/XJkVRVI6/2dGFEequ0cRZQV0f8wfGlIYEmBwIFog+Jf2hHwIGlGcFWL0Y8rrVA8VmPK6IB87pkBSsb8wppo+oPisgyxxVasuQJW4BnaYwBQp01M4kECpLP8TOEf0ZebBzR4wk3g2Cgg+skXe6oFvxfwh8mYdAoHmqNutSFiKUTfMEUkJdGh5hG2TxakHOQX2zRwQ+5air0IQOqxZtx1D9+ETO24/YGeUaBx3ibJfCpbhkx04+9Z/lP7ads0bJQ1ESn/YdUD7TcKjIuwOojVQZU49IDVQFbadaFdkGbTAlT7BUK8JIe/6GPfPT9bSdQ3kNtT3lDbUnOs1pRUyun1jG4kzL0GQVsi5q2cD7lV9jOPMRiGzmf9TPq2IoHen98xm/koKA647Syfb/sf14TqG7GLeH01ELucQVhjJhRo/EVYYxZUoxwgrhFLVHRBW6H4t0SmyCt0vlipBVqHz1WCltAppOF7PV4nwe4j20dghq9Dnisx6hHeLgGuvtBBWaH5NLUw8lrcW0qen+D41/md8bdz9NOpIKxzQvIksUtKteeI9REgeYQ5XRNtQXGGm+iamhZPcWWFnimg3zuTgd/RWqPWcfgcA3BUOOZ5pgM1PZ6O7wk4m7HG7+ycBxl9hJxP8F99P83siUPj1LnIuej1lUhrpj0IhO47yzXNl4I3mSVDrGjbIQzyLr3Xx70gUdjrzHu+g8Q6laESj8OssldOufU3WE0xSSEQKv/bGmx7SFH/YXGHXEpXCgvn2tTYE+LKrjB6WE53CgsG8Pxrv0tXisIs8LD7T98no9oMzf5QKRWkVNl8h7eLxVmGMtAqPMW72KgJJodoNkJqQFBr3SJOBpLCJryFJoeotkGpQFBq3QxWCoFCxDlcTfNaOTBGQPWiFzPvf/EEr9F4oG6xC73XyQSr0XmYAOIXeqwyhi3CoP3ovMgiEwuBye18yUKFxU2lxQIXeCwwGUNjwJ7Qgqy3MaeKZ/l/qFApWwDtSrfDJe2lCZBVRO7V+N+ZkpbHXN+OrMTQZlgTszuX5PHBSCHwe35cfXB4VXE7O6PH8y/B2PHv+evVmvTL77D8543KVvueGuwAAAABJRU5ErkJggg==);
+            background-size: cover;
+            background-position: center;
+        }
+        .search-txt{
+            width: 535px;
+            margin-left: 0;
+            font-size: 20px;
+            border: 0px;
+            outline: 0px;
+            border-radius: 25px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="EMT"></div>
+        <div class="head">
+            <div class="menu">
+                <div class="item1"> GMAIL </div>
+                <div class="item1"> LOGIN</div>
+                <div class="item1"> IMAGE </div>
+                <div class="item2"> R </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="logo"></div>
+        </div>
+ 
+        <div class="search-bar">
+            <input type="text" class="search-txt" placeholder="검색어를 입력하세요.">
+            <div class="search-btn"></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
