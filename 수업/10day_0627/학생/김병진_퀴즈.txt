@@ -1,0 +1,159 @@
+1. prompt 사용자입력 - 점수를 입력받아서 학점을 출력  
+   반복 (음수입력되기전까지)
+  -점수를입력받는다
+  -점수에 대한 학점을 구한다
+  -점수 출력
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let grade;
+      let score = 0;
+      while (score >= 0) {
+        score = prompt("점수를 입력하세요");
+        score = parseInt(score);
+
+        if (score >= 90) {
+          grade = "A";
+        } else if (score >= 80) {
+          grade = "B";
+        } else if (score >= 70) {
+          grade = "C";
+        } else {
+          grade = "F";
+        }
+        alert("학점은 " + grade);
+        alert("점수는 " + score + "점");
+      }
+    </script>
+  </body>
+</html>
+
+//4.ㅡㅡㅡㅡㅡㅡㅡ2~5단까지 출력하기 ( 2~5단)   ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+<!DOCTYPE html>
+<html Lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>구구단 출력</h2>
+    <script>
+      for (let i = 2; i < 6; i++) {
+        for (let j = 1; j < 10; j++) {
+          document.write(i + " x " + j + " = " + i * j + "<br>");
+        }
+        document.write("<hr>");
+      }
+    </script>
+  </body>
+</html>
+
+//5.ㅡㅡㅡㅡㅡㅡㅡ 별출력  (단 *별 한개를 이용하기) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+   5) ***
+      **
+      *
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>별출력</h2>
+    <script>
+      for (let i = 3; i > 0; i--) {
+        for (let j = 0; j < i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
+</html>
+
+//6.ㅡㅡㅡㅡㅡㅡㅡ 구구단 while, do~ while  해결하기 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>구구단 출력</h2>
+    <script>
+      let i = 1;
+      let j = 2;
+      while (j <= 5) {
+        do {
+          document.write(j + " x " + i + " = " + i * j + "<br>");
+          i++;
+        } while (i < 10);
+        document.write("<hr>");
+        i = 1;
+        j++;
+      }
+    </script>
+  </body>
+</html>
+
+//ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 수맞추기 기계 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = Math.floor(Math.random() * 50) + 1;
+      let i = 0;
+      while (i < 3) {
+        i++;
+        let user = prompt("1~50 숫자를 입력하세요");
+        user = parseInt(user);
+        //정답 입력
+        if (user == number) {
+          alert("당첨입니다.");
+          break;
+        }
+        //잘못된 입력
+        else if (user > 50 || user < 1) {
+          alert("1~50 범위의 숫자를 입력하세요");
+          i--;
+          continue;
+        }
+        //기회 3번 소진시
+        if (i == 3) {
+          alert("실패");
+          alert("정답은 " + number);
+          break;
+        }
+        //up down 판별
+        if (user < number) {
+          alert("Up");
+        } else {
+          alert("Down");
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+
+

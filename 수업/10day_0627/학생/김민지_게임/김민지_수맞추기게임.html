@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let computer=Math.floor(Math.random()*100);
+        //alert(computer);
+
+        for(let i=0; i<3; i++){
+            let num=prompt("3번안에 수를 맞춰보세요","1~100");
+
+            if(num<computer){
+                alert("up");
+            }else if(num>computer){
+                alert("down");
+            }else if(num==computer){
+                alert("당첨입니다");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

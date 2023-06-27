@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let computer=Math.floor(Math.random()*100); //컴퓨터가 정한 랜덤수
+
+        let num1;
+        let num2;
+        let num3;
+
+        while(true){
+            num1=Math.floor(Math.random()*100); //첫번째 변수
+            num2=Math.floor(Math.random()*100); //두번째 변수
+            num3=Math.floor(Math.random()*100); //세번째 변수
+
+            /*console.log(computer);
+            console.log(num1);
+            console.log(num2);
+            console.log(num3);*/
+
+            if(num1==computer || num2==computer || num3==computer){
+                 alert("랜덤수는 " + computer + " 입니다");
+                break;
+            }
+        }
+
+        let choice=prompt("어떤 변수가 맞췄을지 선택해보세요","1, 2, 3");
+        if(num1==computer && choice==1){
+            alert("정답입니다");
+        }else if(num2==computer && choice==2){
+            alert("정답입니다");
+        }else if(num3==computer && choice==3){
+            alert("정답입니다");
+        }else{
+            alert("오답입니다");
+        }
+
+    </script>
+
+</body>
+</html>

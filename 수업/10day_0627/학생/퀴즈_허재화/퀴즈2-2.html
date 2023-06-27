@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // let n = 0;     // 지워도 계속 반복됨
+        while (true) {
+            // n++;      // 지워도 계속 반복됨
+
+            let a = parseInt(prompt("점수 입력"))
+            if (a >= 80) {
+                grade = "A등급";
+            }
+            else if (a >= 65) {
+                grade = "B등급";
+            }
+            else if (a >= 50) {
+                grade = "C등급";
+            }
+            else {
+                grade = "F등급";
+            }
+            if (a < 0) {
+                alert("음수입력!!");
+                alert("종료");
+                break;
+            }
+
+            alert(grade);
+            alert("종료");
+            
+
+        }
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

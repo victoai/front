@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // let a = parseInt(prompt());
+
+        let n = 0;
+        while (n < 3) {
+            n++;
+
+            let a = parseInt(prompt("점수를 입력하세요."))
+            if (a >= 90) {
+                grade = "a등급";
+            }
+            else if (a >= 80) {
+                grade = "B등급";
+            }
+            else if (a >= 70) {
+                grade = "C등급";
+            }
+            else if (a >= 60) {
+                grade = "D등급";
+            }
+            else {
+                grade = "F등급";
+            }
+
+
+            alert(grade);
+
+
+        }
+        alert("프로그램이 종료되었습니다.")
+        // 등금  90이상   a  80이상  b   70이상   c  나머지   f
+
+
+
+    </script>
+</body>
+
+</html>
