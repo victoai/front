@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let webtoon=[["뷰티풀 군바리","신의탑","퀘스트지상주의","똑 닮은 딸","백수세끼"],
+                     ["김부장","내가 키운s급들","마루는 강쥐","대학원 탈출일지","신과함께 돌아온 기사왕님"],
+                     ["화산귀환","전지적 독자 시점","성스러운 작가생활","무직백수 계백순","헬퍼2"],
+                     ["앞집나리","나노마신","촉법소년","재벌집 막내아들","현실퀘스트"],
+                     ["외모지상주의","나 혼자 만렙 뉴비","광마회귀","역대급 영지 설계사","재혼 황후"]
+                    ];
+
+        let day=parseInt(prompt("요일을 선택하세요. (0.월요일 1.화요일 2.수요일 3.목요일 4.금요일"));
+        let pick=prompt("목록 번호를 선택하세요.");
+        
+       switch(day){
+            case 0: 
+                alert("월요일 "+webtoon[day][pick]+"입니다.");
+                break;
+            case 1:
+                alert("화요일 "+webtoon[day][pick]+"입니다.");
+                break;
+            case 2:
+                alert("수요일 "+webtoon[day][pick]+"입니다.");
+                break;
+            case 3 :
+                alert("목요일 "+webtoon[day][pick]+"입니다.");
+                break;
+            case 4 :
+                alert("금요일 "+webtoon[day][pick]+"입니다.");
+                break;    
+       }
+
+        
+
+       let result=confirm("전체 웹툰0보기원하면 확인 누르세요 !");
+       alert( result);
+
+       if( result == true) {       //   if(  result)
+            for(let i=0; i<5; i++){
+                for(let j=0; j<5; j++){
+                    document.write(webtoon[i][j]  +"<br>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
