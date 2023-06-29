@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       img{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            text-align: center;
+        } 
+    </style>
+
+</head>
+<body>
+
+    <img src="" id="img" >
+    
+    <script>
+
+        function gimbab(laver, rice, carrot, egg, burdock, spinach, sesameOil, salt, ham){
+            document.write("<br> 김밥 만드는 순서 <br>");
+            document.write("당근 "+carrot+"을 채를 썬다. <br>");
+            document.write("채 썬 당근에 "+salt+"를 넣고 볶는다. <br>");
+            document.write("계란 "+egg+"를 지단을 부치고 길게 썬다. <br>");
+            document.write("시금치 "+spinach+"를 뜨거운 물에 10초정도 데친다. <br>");
+            document.write("시금치를 물기를 짜서 참기름과 소금 "+salt+"을 넣고 양념한다. <br>");
+            document.write("밥에 "+sesameOil+"과 "+salt+"를 넣고 양념한다. <br>");
+            document.write("햄 "+ham+"을 볶는다.");
+            document.write("김을 "+laver+" 두고 그 위에 밥, 당근, 지단, 우엉, 시금치, 햄을 가지런히 올린다. <br>");
+            document.write("정성을 다해 김밥을 싼다. <br>");
+            document.write("김밥 위에 참기름을 바르고 잘 썬다. <br>");
+            document.write("접시 위에 가지런히 올린다. <br>");
+
+
+            let foodImg = "./해녀김밥.jpg";
+            return foodImg;
+        }
+
+            let laver = "한 장";
+            let rice = "한 공기";
+            let carrot = "1/4개";
+            let egg = "2알";
+            let burdock = "5줄";
+            let spinach = "반 단";
+            let sesameOil = "2T";
+            let salt = "1t";
+            let ham = "3줄";
+            
+            let food = gimbab(laver, rice, carrot, egg, burdock, spinach, sesameOil, salt, ham);
+            let pimg = document.getElementById("img");
+            pimg.src = food;
+            
+    </script>
+</body>
+</html>

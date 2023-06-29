@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@100&family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Black Han Sans', sans-serif;
+            position: relative;
+
+        }
+        .wrap{
+            width: 750px;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .wrap h3{
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .wrap .review_img {
+           display: flex;
+
+        }
+        .wrap .review_img h4{
+            letter-spacing: 3px;
+        }
+        .wrap .review_img .img{
+            width: 50%;
+            text-align: center;
+        }
+        .wrap .review_img .review{
+            width: 50%;
+            text-align: center;
+        }
+        .wrap .review_img .img img{
+            width: 300px;
+            height: 300px;
+            margin-bottom: 30px;
+        }
+        .wrap .review_img .review textarea{
+            width: 350px;
+            height: 120px;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .wrap .info{
+            text-align: center;
+            margin-bottom: 70px;
+            
+        }
+        .wrap .info h4{
+            display: inline-block;
+            margin-bottom: 0px;
+            margin-left: 80px;
+            margin-right: 90px;
+            letter-spacing: 2px;
+        }
+
+        .wrap .info input{
+            display: inline-block;
+            margin: -3px;
+            width: 200px;
+            text-align: center;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .wrap .abc {
+            margin: 0 35px;
+        }
+        .wrap .abc h4{
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+        }
+        .wrap .abc input{
+            margin-bottom: 50px;
+            width: 100%;
+            height: 80px;
+        }
+        .wrap .abc textarea{
+            margin-bottom: 50px;
+            width: 100%;
+            height: 80px;
+        }
+        .like img{
+            width: 50px;
+            height:50px;
+            margin-top: -20px;
+            position: absolute;
+            bottom: 260px;
+            right: 330px;
+        }
+        .like h4{
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: 290px;
+            right: 180px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <h3>REVIEW DETAIL</h3>
+        
+        <div class="review_img">
+            <div class="img">
+                <h4>이미지</h4>
+                <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA0MTJfODQg%2FMDAxNjE4MjM2NTY0ODY1.cCAGaBA4e7TTjlDfqCQIDvgg_4lmaMfQBlfI19MAaggg.AtskAsHmVToHguUaMN4Hlxvpvp7WBiYXT8SVIebeF24g.JPEG.choijiy88%2FIMG_7874.jpg&type=a340" alt="">
+            </div>
+
+            <div class="review">
+                <h4>맛평가(후기)</h4>
+                <textarea> </textarea>
+            </div>
+
+        </div>
+
+        <div class="info">
+            <h4><label for="write1">연령대</label></h4>
+            <h4><label for="write2">만족도</label></h4>
+            <h4><label for="write3">성별</label></h4>
+            <br>
+            <input type="text" id="write1">
+            <input type="text" id="write2">
+            <input type="text" id="write3">
+        </div>
+
+        <div class="abc">
+            <h4>판매점 정보</h4>
+            <input type="text">
+
+            <h4>더 나누고 싶은 정보</h4>
+            <textarea></textarea>
+        </div>
+    </div>
+
+    
+    <div class="like">
+        <h4>좋다고 생각되시면 꾹~~~</h4>
+        <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fflat-hand-like-icon-vector-id900030652%3Fk%3D6%26m%3D900030652%26s%3D170667a%26w%3D0%26h%3D6Nwb7yfCo4c5Zn4kcO_XNElSANJZICarPAGysklX1KY%3D&type=a340" alt="">
+     
+    </div>
+
+</body>
+</html>

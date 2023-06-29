@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        
+        /* 전체 페이지 크기 */
+        .wrap{
+            border: 1px solid black;
+            height: 2000px;
+            padding: 50px;
+        }
+
+        /* header */
+        header{
+            border: 1px solid blue;
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+        header p{
+            width: 100%;
+            border: 1px solid red;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 1000;
+        }
+
+        nav{
+            border: 1px solid blue;
+            height: 100px;    
+        }
+
+        
+
+        /* section1 */
+        .section1{
+            border: 1px solid black;       
+
+            display: flex;
+            /*justify-content: center;
+            align-items: center;
+            padding: 0px 80px;
+            padding-bottom: 100px;*/
+        }
+        .section1 ul{
+            border: 1px solid red;
+            height: 100px;
+            width: 100%;
+        }
+        .section1 ul li p{
+           text-align: center;
+           padding: 5px 0px;
+           font-size: 15px;
+           font-weight: 1000;
+        }
+        .section1_input{            
+            border: 1px solid black;
+         }
+        .section1 ul li input{
+            border: 1px solid blue;
+           
+            width: 99.5%;
+            margin-top: 0px;
+         
+        }
+
+
+        /* section2 */
+        .section2 ul{
+            padding: 10px;
+        }
+        .section2 ul li p{
+            width: 100%;
+            font-size: 15px;
+            font-weight: 1000;
+            padding-bottom: 5px;
+        }
+        .section2 ul li input{
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 20px;
+            width: 98%;
+            padding-left: 5px;
+        }
+
+
+        /* section3 */
+        .section3 ul{
+            padding: 10px;
+        }
+        .section3 ul li p{
+            width: 100%;
+            font-size: 15px;
+            font-weight: 1000;
+            padding-bottom: 5px;
+        }
+        .section3 ul li input{
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 100px;
+            width: 98%;
+            padding-left: 5px;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <header>
+            <p>REVIEW DETAIL</p>
+        </header>
+
+        <nav></nav>
+
+        <section class="section1">
+            <ul>
+                <li><p>연령대</p></li>
+                <li class="section1_input"><input type="text" ></li>
+            </ul>
+            <ul>
+                <li><p>만족도</p></li>
+                <li class="section1_input"><input type="text"></li>
+            </ul>
+            <ul>
+                <li><p>성별</p></li>
+                <li class="section1_input"><input type="text"></li>
+            </ul>
+        </section>
+ 
+
+        <section class="section2">
+            <ul>
+                <li><p>판매점 정보(구매사이트)</p></li>
+                <li><input type="text"></li>
+            </ul>
+        </section>
+
+        <section class="section3">
+            <ul>
+                <li><p>더 나누고 싶은 정보</p></li>
+                <li><input type="text"></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

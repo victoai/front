@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="pimg">
+
+    <script>
+
+        function cook떡볶이(떡, 고추장, 물, 계란){
+            alert("1. 물 " + 물 +"로 육수를 만든다");
+            alert("2. 육수에 고추장 "+고추장+"을 넣는다");
+            alert("3. 떡 "+ 떡+ "을 넣는다");
+            alert("4. 계란 "+계란+"를 올린다");
+            //return "떡볶이.jpg";
+            return "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzAxMDJfMTMx%2FMDAxNjcyNjM5MTUyMzIy.Ls7PHKC1p-JmdQCwH9vW8tNafzfYK0lO3S3NaEAR6IUg.9SPeCxAiHlBc_8m9H7B_xC2YFHHRrAMuk6u_N4qzCRQg.JPEG.wookyungmom%2FKakaoTalk_20230102_124646137_06.jpg&type=a340";
+        }
+
+        let 떡=200+"g";
+        let 고추장=1.5 +"스푼";
+        let 물=500+"ml";
+        let 계란="한개";
+
+        let food = cook떡볶이(떡,고추장,물,계란);
+
+        let pimg = document.getElementById("pimg");
+        pimg.src=food;
+
+    </script>
+</body>
+</html>

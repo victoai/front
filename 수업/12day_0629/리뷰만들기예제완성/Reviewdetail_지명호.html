@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@100&family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Black Han Sans', sans-serif;	 	
+        }
+       
+        .wrap{
+            width: 600px;
+            
+            padding: 20px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        .head h3{
+            text-align: center;
+            font-weight: bold;
+            
+        }
+        .img_wrap{
+            width: 550px;
+            padding: 30px;
+            
+            margin: 0 auto;
+            display: flex;
+            
+        }
+        .img{
+            width: 50%;
+            height: 150px;
+            border: 1px solid black;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhzK8_IEN29a6gvVkaedsAu8ym1fFDCEBxBw&usqp=CAU);
+            background-size: cover;
+            background-position: center;
+            margin-right: 10px;
+        }
+        .text textarea{
+            width: 250px;
+            height: 97px;
+            text-align: center;
+        }
+        
+        .info{
+            display: flex;
+        }
+       
+    
+       .sell input{
+        width: 100%;
+        
+
+       }
+       .sell{
+        margin-top: 100px;
+       }
+        .you{
+            margin-top: 40px;
+        }
+           
+        .you textarea{
+            width: 598px;
+            height: 100px;
+
+        }
+        .age{
+            display: flex;
+            text-align: center;
+            list-style: none;
+            width: 100px;
+            
+        }
+        .age input{
+            width: 170px;
+            
+        }
+        .dd{
+            width: 100%;
+            text-align: center;
+        }
+        .ww{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="head"> <h3>REVOEW DETAIL</h3></div>
+       
+        <div class="img_wrap">
+            
+          <div class="dd">이미지<div class="img"></div></div>
+         <div class=" ww">맛평가<div class="text"><textarea></textarea> </div></div>
+        </div>
+        
+
+        
+        <ul class="age">
+            <li>연령대<input type="text"></li>
+            <li>만족도<input type="text"></li>
+            <li>성별<input type="text"></li>
+        </ul>
+
+        <div class="sell">
+            <div>판매점 정보(구매사이트)<input type="text"></div>
+        </div>
+        
+        <div class="you">
+            <div>더 나누고 싶은 정보
+                <textarea></textarea> 
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

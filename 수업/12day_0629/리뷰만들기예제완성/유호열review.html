@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=JetBrains+Mono:wght@100&family=Righteous&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Black Han Sans', sans-serif;	 	
+        }
+
+        .wrap{
+            width: 800px;
+            border: 1px solid black;
+            padding: 20px 10px;
+            margin: 0 auto;
+            
+            
+            
+        }
+        .wrap h3{
+            text-align: center;
+        }
+        .wrap .top{
+                display: flex;
+        }
+        .wrap .top_left{
+            width: 300px;
+            height: 300px;
+            /* border: 1px solid black; */
+            text-align: center;
+            padding: 20px;
+
+        }
+        .wrap .top_left .img{
+            width: 250px;
+            height: 250px;
+            background-image: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2Fae%2F2a%2F4c%2Fae2a4cb7bd754a17efb607447f52404b.jpg&type=sc960_832);
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+        }
+        .wrap .top_right{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            padding: 20px 50px;
+
+        }
+        .wrap .top_right label{
+            padding-left: 60px;
+            
+        }
+        .wrap .info{
+            
+            display: flex;
+            text-align: center;
+            padding-left: 40px;
+                        
+                        
+        }
+        .wrap .info input{
+            width: 230px;
+            padding: 5px 0;
+        }
+        .wrap .site{
+            margin-top: 150px;
+            margin-left: 10px;
+        }
+        .wrap .site input{
+            width: 97%;
+            padding: 5px 0;
+            
+        }
+        .wrap .share{
+            margin-top: 50px;
+            margin-left: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <h3>REVIEW DETAIL</h3>
+        
+        <div class="top">
+        <div class="top_left">
+            이미지
+            <div class="img"></div>
+        </div>
+
+        <div class="top_right">
+            <label for="taste">맛평가(후기)</label>
+            <textarea name="" id="taste" cols="50" rows="15"></textarea>
+        </div>
+        </div>
+
+    
+        
+        <div class="info">
+            <div>연령대<br><input type="text"></div>
+            <div>만족도<br><input type="text"></div>
+            <div>성별<br><input type="text"></div>
+        
+
+        </div>
+
+        <div class="site">
+            판매점 정보(구매사이트)<br>
+            <input type="text">
+
+        </div>
+        <p class="share">
+            더 나누고 싶은 정보<br>
+            <textarea name="" id="" cols="107" rows="5"></textarea>
+        </p>
+        
+        
+
+    </div>
+    
+</body>
+</html>
