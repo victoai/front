@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+
+        //고차함수  ,  매개변수를 함수 ( 콜백함수) 로 받는 함수 
+        function hFunc( f ){
+            f();
+        }
+
+        hFunc(whatUp1);
+
+        function whatUp1(){
+            alert("H");
+        }
+
+        function whatUp2(){
+            alert("A");
+        }
+
+        function whatUp3(){
+            alert("P");
+        }
+
+        function whatUp4(){
+            alert("P");
+        }
+
+        function whatUp5(){
+            alert("Y");
+        }
+
+        function whatUp6(){
+            alert("HAPPY");
+        }
+        setTimeout(whatUp1, 1000);
+        setTimeout(whatUp2, 2000);
+        setTimeout(whatUp3, 5000);
+        setTimeout(whatUp4, 7000);
+        setTimeout(whatUp5, 9000);
+        setTimeout(whatUp6, 11000);
+
+
+    </script>
+
+
+    
+</body>
+</html>
