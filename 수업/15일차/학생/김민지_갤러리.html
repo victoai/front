@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .wrap{
+            height: 800px;
+            background-color: rgb(248, 235, 237);
+
+            position: relative;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        h2{
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.596);
+            height: 70px;
+            line-height: 70px;
+            color: rgb(58, 57, 57);
+        }
+        .gallery{
+            width: 300px;
+            height: 200px;
+            margin: 50px auto;
+            border: 12px solid rgb(110, 22, 66);
+
+            position: relative;
+            background-image: url("imgs2/단체_비밀정원.jpg") ;
+            background-size: cover;
+            background-position: center;
+        }
+        .left{
+            position: absolute;
+            top: 220px;
+            left: 10px;
+        }
+        .right{
+            position: absolute;
+            top: 220px;
+            right: 10px;
+        }
+
+        .img1{
+            width: 300px;
+            height: 200px;
+
+            position: absolute;
+            bottom: 300px;
+            left: 150px;
+            z-index: 999;
+        }
+        .img2{
+            width: 250px;
+            height: 400px;
+
+            position: absolute;
+            bottom: 30px;
+            left: 400px;
+        }
+        .img3{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            bottom: 90px;
+            left: 50px;
+        }
+        .img4{
+            width: 350px;
+            height: 250px;
+            position: absolute;
+            bottom: 50px;
+            left: 700px;
+        }
+        .img5{
+            width: 250px;
+            height: 180px;
+            position: absolute;
+            bottom: 200px;
+            right: 700px;
+            z-index: 999;
+        }
+        .img6{
+            width: 400px;
+            height: 250px;
+            position: absolute;
+            bottom: 50px;
+            right: 400px;
+            z-index: 500;
+        }
+        .img7{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+
+    </style>
+
+    <script>
+
+        let imgs=["imgs2/단체_비밀정원.jpg", "imgs2/미미.jpg", "imgs2/비니.jpg", "imgs2/승희.jpg", "imgs2/아린.jpg", "imgs2/유아.jpg", "imgs2/지호.jpg", "imgs2/효정.jpg"];
+        let i=0;
+        function next(){
+            i++
+            if(i>=imgs.length){
+                i=0;
+            }
+
+            let gallery=document.querySelector(".gallery");
+            gallery.style.backgroundImage="url(' "+imgs[i]+" ')";
+            gallery.style.backgroundSize="cover";
+            gallery.style.backgroundPosition="center";
+        }
+
+        function prev(){
+            i--;
+            if(i<0){
+                i=imgs.length-1;
+            }
+
+            let gallery=document.querySelector(".gallery");
+            gallery.style.backgroundImage="url(' "+imgs[i]+" ')";
+            gallery.style.backgroundSize="cover";
+            gallery.style.backgroundPosition="center";
+        }
+
+    </script>
+</head>
+<body>
+
+    <div class="wrap">
+
+        <h2>오마이걸</h2>
+        <div class="gallery">
+            <img class="left" src="imgs2/arrow_left.png" onclick="prev()">
+            <img  class="right" src="imgs2/arrow_right.png" onclick="next()">
+         </div>
+
+         <img class="img1" src="https://i.namu.wiki/i/23IWDVBFIP9J3Gi288Tm_N_Ji-gxLuVuH0ti2BxMPx90ScamKjClMqSwUalYYRoOAjDrBj5rQy7RDF9H9td7LA.webp">
+         <img class="img2" src="https://newsimg.sedaily.com/2021/05/10/22MB1NVXL6_3.jpg">
+         <img class="img3" src="https://www.sound-wave.co.kr/shopimages/soundwave/0010010046753.jpg?1649838723">
+         <img class="img4" src="https://www.jejunews.com/news/photo/202004/2162657_185895_013.jpg">
+         <img class="img5" src="https://biz.chosun.com/resizer/Df_cNmftB7kBvrDEB7S3jS4P8zY=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosunbiz/B3QNIOI3BPCZPU3DILDTXPNKM4.jpg">
+         <img class="img6" src="https://cdn.mhns.co.kr/news/photo/202004/406713_521203_2028.jpg">
+         <img class="img7" src="https://image.bugsm.co.kr/album/images/500/200268/20026818.jpg">
+        </div>
+    
+
+    
+    
+
+</body>
+</html>

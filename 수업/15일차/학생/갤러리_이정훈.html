@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            border:1px solid black;
+            width: 300px;
+            height: 300px;
+            margin:0 auto;
+            position: relative;
+        }
+        .img-wrap{
+            border:1px solid black;
+            width: 300px;
+            height: 300px;
+
+        }
+        .btn{
+            background-color: white;
+            width:50px;
+            height:20px;
+            border-radius:20px;
+            border-color: rgba(82, 242, 136, 0.783);
+        }
+        .nextBtn{
+            position: absolute;
+            top: 150px;
+            right:0px;
+        }
+        .preBtn{
+            position: absolute;
+            top: 150px;
+            left:0px;
+        }
+    </style>
+    <script>
+        let a =["imgs2/img1.jpg","imgs2/img2.jpg","imgs2/img3.jpg","imgs2/img4.jpg"];
+        let i=0;
+        function nextImg(){
+            i++;
+            if(i>=a.length){
+                i=0;
+            }
+            let gallery = document.querySelector(".img-wrap");
+            gallery.style.backgroundImage="url('"+a[i]+"')";
+            gallery.style.backgroundSize="cover";
+            gallery.style.backgroundPosition="center";
+
+        }
+        function preImg(){
+            i--;
+            if(i<0){
+                i=a.length-1;
+            }
+            let gallery = document.querySelector(".img-wrap");
+            gallery.style.backgroundImage="url('"+a[i]+"')";
+            gallery.style.backgroundSize="cover";
+            gallery.style.backgroundPosition="center";
+
+        }
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="img-wrap">
+            <button class= "btn nextBtn" onclick="nextImg()">></button>
+            <button class= "btn preBtn" onclick="preImg()"><</button>
+        </div>
+    </div>
+</body>
+</html>

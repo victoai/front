@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        
+        .gallery-wrap{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+
+            position: relative;
+            border-radius: 30px;
+        }
+
+        .gallery{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            background-image : url(' imgs/img11.jpg');
+            background-size : cover;
+            background-position: center;
+            border-radius: 30px;
+
+            
+        }
+
+        .btn{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+
+        }
+
+        .preBtn{
+            position: absolute;
+            top: 220px;
+            left: 0px;
+        }
+
+        .nextBtn{
+            position: absolute;
+            top: 220px;
+            right: 0px;
+        }
+    </style>
+
+    <script>
+        
+        let imgs=["imgs/img1.jpg" , "imgs/img2.jpg" , "imgs/img3.jpg"  , "imgs/img4.jpg" , "imgs/img5.jpg" , "imgs/img6.jpg" , "imgs/img7.jpg"  , "imgs/img8.jpg" , "imgs/img9.jpg", "imgs/img10.jpg", "imgs/img11.jpg", "imgs/img12.jpg" ];
+        let i=0;
+        function nextImg(){
+            
+            i++;
+
+            if(i>=imgs.length){
+                i=0;
+            }
+
+            //alert("dfsa");
+
+            let gallery = document.querySelector(".gallery");
+            gallery.innerHTML="";
+            //gallery.style.backgroundImage = "url('imgs/img1.jpg')";
+
+            gallery.style.backgroundImage = "url('" + imgs[i] +" ')";
+            gallery.style.backgroundSize='cover';
+            gallery.style.backgroundPosition="center";
+
+
+        };
+
+
+        function preImg(){
+            //alert("dsaf");
+            
+            let gallery = document.querySelector(".gallery");
+            gallery.innerHTML="";
+            i--;
+
+            if(i < 0){
+                i= imgs.length-1;
+            }
+
+            
+            //gallery.style.backgroundImage = "url('imgs/img1.jpg')";
+
+            gallery.style.backgroundImage = "url('" + imgs[i] +" ')";
+            gallery.style.backgroundSize='cover';
+            gallery.style.backgroundPosition="center";
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+
+    <div class="gallery-wrap">
+        <div class="gallery"></div>
+
+
+
+        <div class="preBtn btn" onclick="preImg()"><br><<</div>
+        <div class="nextBtn btn" onclick="nextImg()"><br>>></div>
+
+    </div>
+</body>
+</html>

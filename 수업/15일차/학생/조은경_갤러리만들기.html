@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .gallery-wrap{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+
+            position: relative;
+        }
+        .gallery{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            background-image : url("media/SHINee.jpg");
+            background-size : cover;
+            background-position :center;
+
+            text-align: center;
+            line-height: 190px;
+            color: white;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .btn{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: black;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .preBtn{
+            position: absolute;
+            top: 220px;
+            left: -50px;
+        }
+
+        .nextBtn{
+            position: absolute;
+            top: 220px;
+            right: -50px;
+        }
+
+    </style>
+
+    <script>
+        let imgs=["media/key1.jpg", "media/key2.jpg", "media/key3.jpg", "media/key4.jpg"];
+        let i=-1;
+        function nextImg(){
+            i++;
+            if(i>=imgs.length){
+                i=0;
+            }
+            let gallery = document.querySelector(".gallery");
+            gallery.innerHTML="";
+            gallery.style.backgroundImage = "url('"+ imgs[i] +"')";
+            gallery.style.backgroundSize = "cover";
+            gallery.style.backgroundPosition = "center";
+        }
+
+        function prevImg(){
+            let gallery = document.querySelector(".gallery");
+            gallery.innerHTML="";
+            i--;
+            if(i<0){
+                i = imgs.length-1; 
+            }
+            gallery.style.backgroundImage = "url('"+ imgs[i] +"')";
+            gallery.style.backgroundSize = "cover";
+            gallery.style.backgroundPosition = "center";           
+            
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="gallery-wrap">
+        
+            <!--gallery-->
+            <div class="gallery">갤러리 시작</div>
+    
+            <!--btn-->
+            <div class="preBtn btn" onclick="prevImg()"> << </div>
+            <div class="nextBtn btn" onclick="nextImg()"> >> </div>
+            
+    
+        
+    </div>
+    
+</body>
+</html>
