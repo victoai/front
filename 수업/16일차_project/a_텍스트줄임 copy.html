@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+.wrap1 , .wrap2{
+    width: 300px;
+    height :300px;
+    border:1px solid black;
+    display: none;
+   
+}
+
+
+ 
+.my_song{
+           white-space: nowrap;  /*텍스트 줄바꿈 하지 않음 */         
+            overflow: hidden;
+            text-overflow: ellipsis;  /* 잘린내용이 보이지 않음*/   
+}
+    </style>
+
+    <script>
+        function s1(){
+            alert( "1");
+            let wrap1  = document.querySelector(".wrap1");
+            alert( "2");
+            wrap1.style.display="none;"
+            alert( "3");
+            let wrap2  = document.querySelector(".wrap2");
+            alert( "4");
+            wrap2.style.display="block;"
+            alert( "5");
+
+        }
+    </script>
+</head>
+<body>
+
+    <button  onclick="s1()">클릭</button>
+
+    <ul class="wrap1">
+        <li>
+            <div></div>
+            <div class="my_song"> <a href="#"> 이미지</a></div>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <ul class="wrap2">
+        <li>
+            <div></div>
+            <div class="my_song"> <a href="#">i don't like song i don't like songi don't like songi don't like song</a></div>
+        </li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+    
+</body>
+</html>
