@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mj_wrap_two_dj{
+            width: 1058px;
+            height: 210px;
+
+            position: relative;
+        }
+        .mj_wrap_dj_left{
+            display: flex;
+            border: 1px solid #e5e5e5;
+            margin: 0px;
+            padding: 0px;
+
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            
+        }
+        .mj_wrap_dj_left img{
+            width: 180px;
+            height: 180px;
+            border-right: 1px solid #e5e5e5;
+        }
+        .mj_dj_left_inner{
+            padding: 19px 23px 20px;
+        }
+        .mj_playlist_name{
+            font-size: 16px;
+            color: #333333;   
+            position: relative;
+        }    
+        .mj_playlist_creator{
+            font-size: 14px;
+            color: #00b423;
+            position: relative;
+            top: 7px;
+        }
+        .mj_wrap_num_likeAndsong{
+            display: flex;
+            position: relative;
+            top: 13px;
+        }
+        .mj_wrap_num_likeAndsong img{
+            width: 14px;
+            height: 12px;
+        }
+        .mj_wrap_num_likeAndsong a{
+            font-size: 12px;
+            color: #888888;
+            position: relative;
+        }
+        .mj_wrap_num_likeAndsong p{
+            font-size: 12px;
+            color: #888888;
+            position: relative;
+        }
+        .mj_wrap_num_likeAndsong p span{
+            color: #eaeaea;
+        }
+        .mj_tag_button{
+            width: 49px;
+            height: 30px;
+            border-radius: 20px;
+            border: 1px solid #c8c8c8;
+            color: 767676;
+            font-size: 12px;
+            background-color: white;
+            position: relative;
+            top: 25px;
+        }
+        .mj_tag_button:hover{
+            border: 1px solid #888888;
+        }
+        .mj_two_button{
+            width: 60px;
+        }
+        .mj_wrap_dj_right{
+            display: flex;
+            border: 1px solid #e5e5e5;
+            margin: 0px;
+            padding: 0px;
+
+            position: absolute;
+            right: 55px;
+            bottom: 0px;
+        }
+        .mj_four_button{
+            width: 82px;
+        }
+        .mj_hidden_style{
+            font-size: 12px;
+            color: white;
+        }
+        .mj_hidden_style{
+            width: 315px;
+            height: 12px;
+            background-color: rgb(43, 42, 42);
+            font-size: 11px;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            line-height: 12px;
+        }
+        .mj_hidden_playlist_msg1{
+            position: absolute;
+            bottom: -30px;
+            left: 100px;
+            z-index: 999;
+            display: none;
+           
+        }
+        .mj_hidden_playlist_msg2{
+            width: 100px;
+            position: absolute;
+            bottom: -30px;
+            left: 50px;
+            display: none;
+            z-index: 999;
+        }
+        .mj_hidden_playlist_msg3{
+            width: 320px;
+            position: absolute;
+            bottom: -30px;
+            left: 40px;
+            display: none;
+            z-index: 999;
+        
+        }
+        .mj_hidden_playlist_msg4{
+            width: 320px;
+            position: absolute;
+            bottom: -30px;
+            left: 80px;
+            display: none;
+            z-index: 999;
+        }
+    </style>
+
+
+<script>
+
+  function showItems(){
+    
+ let  img="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA5AEkDASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAMEBQECBv/EACsQAAICAgEBBQkBAQAAAAAAAAECAAQDESExBRITIjMUMkFRcoGisdFhkf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD67LlGMEb0dTMzXLRJGHJ+I/k9dqZSttE+aD9mOqVtaY87gRrb7QB82Tj6R/JdVts3qvv7CUZMAZSNCZdnAcB2NwNlSGGxF5cyoDzozNx9olFC6P8AyKy52sOODzAZmuWiSMOT8RFLb7QB82Tj6R/JfVqdzTHncfkwhkI0ICKtpn9V9/YSnx0+cx7Smqesn9rPzMCztZCb+NvgEH7Mvq5VZVUdRO2q4y+f4gamajvXyE6PWBtzxkxLk94bi6+cZE2TzHwI2qJvpGY6yL8JRCBwDQ0Jx2CrszpYL1Opm2rR2UXmBP2kwzHyzP8ABaatSv4pJYalXsK/5ArI3JbdbxF8o0ZXCBiKzV8oBM1K9gZRxF2ayspYdZno+Su3PHMDbnGPdBMRisoUGzzJbdo97uoesDly2GBVToxdes2Rg52RCrXOR9uODNTHjGNdCAIgUDQ1PcIQCEIQOHmS26vijY4lc43QwMF+9jYrzxH1qxzEMd8Rmb1DK6nuQHIgVQNdJ7hCAQhCB//Z"
+ let title="HOT TRENDY 놓쳐선 안될 '국내 랩/힙합' (매주 업데이트) 좋아요";
+
+
+  let  item = ` <ul class="mj_wrap_two_dj">
+            <li class="mj_wrap_dj_left">
+            <img src="https://cdnimg.melon.co.kr/svc/images/melondj/playlist/457910819_org.jpg?tm=20230703030433/melon/resize/180/quality/80/optimize">
+            <div class="mj_dj_left_inner">
+                <a class="mj_a mj_playlist_name" onmouseover="mj_show_dj_msg1()" onmouseout="mj_hide_dj_msg1()" href="https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm?plylstSeq=457910819">
+                    HOT TRENDY 놓쳐선 안될 '국내 랩/...
+                    <div class="mj_hidden_style mj_hidden_playlist_msg1"> </div>
+                </a><br>
+                <a class="mj_a mj_playlist_creator" onmouseover="mj_show_dj_msg2()" onmouseout="mj_hide_dj_msg2()" href="">
+                    HIPHOP마스터
+                    <div class="mj_hidden_style mj_hidden_playlist_msg2">HIPHOP마스터 이동</div>
+                </a><br>
+
+                <div class="mj_wrap_num_likeAndsong">
+                    <a class="mj_a_noUnderLine" href=""  onmouseover="mj_show_dj_msg3()" onmouseout="mj_hide_dj_msg3()">
+
+                        <img src="${img}">
+                        4,782
+                        <div class="mj_hidden_style mj_hidden_playlist_msg3">HOT TRENDY 놓쳐선 안될 '국내 랩/힙합' (매주 업데이트) 좋아요</div>
+                    </a>
+                    <p onmouseover="mj_show_dj_msg4()" onmouseout="mj_hide_dj_msg4()">
+                        <span>|</span> 66곡
+                        <div class="mj_hidden_style mj_hidden_playlist_msg4" > ${title}   </div>/div>
+                    </p>>
+                </div>
+
+                <button class="mj_tag_button">#랩</button>
+                <button class="mj_tag_button mj_two_button">#힙합</button>
+            </div>            
+        </li>
+    </ul> `;
+
+    let wrap = document.querySelector(".wrap");
+    wrap.innerHTML= item;
+
+  }
+
+  function showItems2(){
+
+    let img="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAA5AEkDASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAMEBQECBv/EACsQAAICAgEBBQkBAQAAAAAAAAECAAQDESExBRITIjMUMkFRcoGisdFhkf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD67LlGMEb0dTMzXLRJGHJ+I/k9dqZSttE+aD9mOqVtaY87gRrb7QB82Tj6R/JdVts3qvv7CUZMAZSNCZdnAcB2NwNlSGGxF5cyoDzozNx9olFC6P8AyKy52sOODzAZmuWiSMOT8RFLb7QB82Tj6R/JfVqdzTHncfkwhkI0ICKtpn9V9/YSnx0+cx7Smqesn9rPzMCztZCb+NvgEH7Mvq5VZVUdRO2q4y+f4gamajvXyE6PWBtzxkxLk94bi6+cZE2TzHwI2qJvpGY6yL8JRCBwDQ0Jx2CrszpYL1Opm2rR2UXmBP2kwzHyzP8ABaatSv4pJYalXsK/5ArI3JbdbxF8o0ZXCBiKzV8oBM1K9gZRxF2ayspYdZno+Su3PHMDbnGPdBMRisoUGzzJbdo97uoesDly2GBVToxdes2Rg52RCrXOR9uODNTHjGNdCAIgUDQ1PcIQCEIQOHmS26vijY4lc43QwMF+9jYrzxH1qxzEMd8Rmb1DK6nuQHIgVQNdJ7hCAQhCB//Z"
+    let title="타이틀2";
+    let img2="https://cdnimg.melon.co.kr/svc/user_images/plylst/2023/06/541/68/525571872_org.jpg?tm=20230706120912/melon/resize/180/quality/80/optimize";
+    let songNum="20곡";
+    let tag = "#힙합";
+    let tag2="발라드";
+    let title222="바뀐노래제목";
+    let singer="가수"
+
+
+  let  item = ` <ul class="mj_wrap_two_dj">
+            <li class="mj_wrap_dj_left">
+            <img src="${img2}">
+            <div class="mj_dj_left_inner">
+                <a class="mj_a mj_playlist_name" onmouseover="mj_show_dj_msg1()" onmouseout="mj_hide_dj_msg1()" href="https://www.melon.com/mymusic/dj/mymusicdjplaylistview_inform.htm?plylstSeq=457910819">
+                    ${title222}
+                    <div class="mj_hidden_style mj_hidden_playlist_msg1"> </div>
+                </a><br>
+                <a class="mj_a mj_playlist_creator" onmouseover="mj_show_dj_msg2()" onmouseout="mj_hide_dj_msg2()" href="">
+                    ${singer}
+                    <div class="mj_hidden_style mj_hidden_playlist_msg2">HIPHOP마스터 이동</div>
+                </a><br>
+
+                <div class="mj_wrap_num_likeAndsong">
+                    <a class="mj_a_noUnderLine" href=""  onmouseover="mj_show_dj_msg3()" onmouseout="mj_hide_dj_msg3()">
+
+                        <img src="${img}">
+                        4,782
+                        <div class="mj_hidden_style mj_hidden_playlist_msg3">HOT TRENDY 놓쳐선 안될 '국내 랩/힙합' (매주 업데이트) 좋아요</div>
+                    </a>
+                    <p onmouseover="mj_show_dj_msg4()" onmouseout="mj_hide_dj_msg4()">
+                        <span>|</span> ${songNum}
+                        <div class="mj_hidden_style mj_hidden_playlist_msg4" > ${title}   </div>/div>
+                    </p>>
+                </div>
+
+                <button class="mj_tag_button">${tag}</button>
+                <button class="mj_tag_button mj_two_button">${tag2}</button>
+            </div>            
+        </li>
+    </ul> `;
+
+    let wrap = document.querySelector(".wrap");
+    wrap.innerHTML= item;
+
+  }
+
+
+
+
+</script>
+</head>
+<body>
+    <button  onclick="showItems()">  추가1</button>
+    <button  onclick="showItems2()">  추가2</button>
+
+    <div class="wrap">
+
+
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            width: 300px;
+            list-style: none;
+        }
+         li{
+            height: 60px;           
+         }
+
+        
+         .on{
+              height: 100px;
+              background-color: red;
+         }
+          
+
+    </style>
+
+    <script>
+        let selectedIdex;
+        function aaa(index){
+             
+            selectedIdex = index-1;
+             let lis  =document.querySelectorAll("li");
+
+             lis.forEach(  function( li , index){
+                  li.classList.remove("on");
+             });
+
+             lis[selectedIdex].classList.add("on"); 
+        }
+
+
+        function bbb( obj){
+             obj.classList.add("on");
+        }
+    </script>
+</head>
+<body>
+
+    <ul>
+        <li  mouseover="bbb(this)" onmouseout="aaa(1)">a</li>
+        <li  mouseover="bbb(this)" onmouseout="aaa(2)">a</li>
+        <li   mouseover="bbb(this)"onmouseout="aaa(3)">a</li>
+        <li  mouseover="bbb(this)"  onmouseout="aaa(4)">a</li>
+    </ul>
+    
+</body>
+</html>

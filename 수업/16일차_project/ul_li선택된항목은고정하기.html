@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul{
+            width: 300px;
+            list-style: none;
+        }
+         li{
+            height: 60px;           
+         }
+
+        
+          
+    </style>
+
+    <script>
+        let selectedIdex;
+        function aaa(index){
+    
+            let lis =  document.querySelectorAll("li");       
+            selectedIdex= index-1;
+
+           
+
+           for(let i=0; i< lis.length ; i++ ){
+                lis[i].style.height="60px";
+                lis[i].style.backgroundColor="white";            
+           }
+
+           
+         //  alert(   lis[selectedIdex]);
+            lis[selectedIdex].style.height="100px";
+            lis[selectedIdex].style.backgroundColor="red";
+
+
+
+        }
+
+        function bbb(obj){
+            obj.style.height="100px";
+            obj.style.backgroundColor="red";
+
+
+        }
+    </script>
+</head>
+<body>
+
+    <ul>
+        <li  mouseover="bbb(this)" onmouseout="aaa(1)">a</li>
+        <li  mouseover="bbb(this)" onmouseout="aaa(2)">a</li>
+        <li   mouseover="bbb(this)"onmouseout="aaa(3)">a</li>
+        <li  mouseover="bbb(this)"  onmouseout="aaa(4)">a</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap_id">
+        <a href="https://www.melon.com">
+            <img src="https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230703040214324.jpg">
+            <p>19</p>
+            <p>다이나믹 듀오</p>
+        </a>
+        
+        <a href="https://www.melon.com/tv/index.htm">
+            <p >멜론TV</p>
+        </a>
+    </div>
+    <button onclick="change_wrap(1)">1번변경하기</button>
+    <button onclick="change_wrap(0)">2번변경하기</button>
+    <script>
+        
+     
+        function change_wrap(n){
+            let item= [{ 
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230630063941461.jpg",
+              singer1: "SHINee (샤이니)",
+              link1: "https://www.google.com/",
+              title1 : "HARD",
+              mel_link1 : "https://www.naver.com",
+              mel_title1 : "네이버"
+            },{
+              img1 : "https://cdnimg.melon.co.kr/resource/image/cds/musicstory/imgUrl20230703040214324.jpg",
+              singer1: "다이나믹 듀오",
+              link1: "https://www.melon.com",
+              title1 : "19",
+              mel_link1 : "https://www.melon.com/tv/index.htm",
+              mel_title1 : "멜론TV"
+            }]
+            let result = document.getElementById("wrap_id");
+            result_img =result.firstElementChild.firstElementChild;
+            result_first=result.firstElementChild;
+            //alert(result_img);
+            
+     
+                result_first.href= item[n].link1;
+                result_img.src=item[n].img1;
+                 //alert(result.lastElementChild.firstElementChild)
+                result_p_title=result_img.nextElementSibling;
+                //alert(result_p_title);
+                result_p_title.innerHTML=item[n].title1;
+                result_p_singer=result_p_title.nextElementSibling;
+                //alert(result_p_singer);
+                result_p_singer.innerHTML=item[n].singer1;
+
+                //alert(result.lastElementChild);
+                result_link = result.lastElementChild;
+                result_link.href =item[n].mel_link1;
+                //alert(result_link);
+                result_addr = result.lastElementChild.firstElementChild;
+                result_addr.innerHTML=item[n].mel_title1;
+                //alert(result_addr)
+
+
+        }
+    </script>
+</body>
+
+</html>

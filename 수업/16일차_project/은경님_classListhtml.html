@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .event_content_btnGroup{
+            display: flex;
+            justify-content: center;
+            height: 200px;
+        }
+        .event_content_btn{
+            background-color: transparent;
+            width: 30px;
+            height: 30px;
+            color: #a5a5a5;
+            font-size: 14px;
+            font-weight: 600;
+            display: block;
+            text-align: center;
+            line-height: 29px;
+            margin-top: 20px;
+            margin-left: 10px;
+
+            text-decoration: none;
+        }
+        .btn_click{
+            border: 1px solid black;
+            border-radius: 50%;
+            color: black;
+        }
+        
+
+    </style>
+
+  
+</head>
+<body>
+    
+    <div class="event_content_btnGroup">
+        <div class="event_content_btn">1</div>
+        <div class="event_content_btn">2</div>
+        <div class="event_content_btn">3</div>
+        <div class="event_content_btn">></div>
+    </div>
+
+
+    <script>
+         function  addStyle(index){
+
+            // .id="";
+            let a  = document.querySelectorAll(".event_content_btn"); // 클래스명을 가진 모든 것을 배열로 저장
+
+            for(let i = 0 ; i<a.length; i++){
+                index = i;
+                a[index].classList.add("btn"+(index+1));
+                
+            }
+           
+
+   
+            // a[0].classList.remove("on");
+
+         }
+   
+         addStyle(1);
+          
+
+
+
+    </script>
+</body>
+</html>

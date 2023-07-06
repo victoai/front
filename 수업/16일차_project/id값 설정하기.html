@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function addId(){
+             let div = document.querySelector("div");
+             div.id="id1";
+        }
+
+
+        function selectID(){
+             let div = document.getElementById("id1");
+             alert( div);
+        }
+    </script>
+</head>
+<body>
+    
+
+    <div></div>
+    <button  onclick="addId()">id 주기</button>
+    <button  onclick="selectID()">id  사용하기</button>
+</body>
+</html>
