@@ -1,0 +1,39 @@
+
+hbi@DESKTOP-TMIDB99 MINGW64 ~/Documents/project (juntae)
+$ git pull origin main
+remote: Enumerating objects: 24, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 19 (delta 6), reused 8 (delta 3), pack-reused 0Unpacking objects:
+ 57% (11/19)
+Unpacking objects: 100% (19/19), 12.43 KiB | 41.00 KiB/s, done.
+From https://github.com/juntae710/project
+ * branch            main       -> FETCH_HEAD
+   3be3a1e..ca151b5  main       -> origin/main
+Auto-merging wavve/0.mix/css/웨이브로그인.css
+CONFLICT (add/add): Merge conflict in wavve/0.mix/css/웨이브로그인.css
+Automatic merge failed; fix conflicts and then commit the result.
+
+hbi@DESKTOP-TMIDB99 MINGW64 ~/Documents/project (juntae|MERGING)
+$ git checkout main
+error: you need to resolve your current index first
+wavve/0.mix/css/웨이브로그인.css: needs merge
+
+hbi@DESKTOP-TMIDB99 MINGW64 ~/Documents/project (juntae|MERGING)
+$ git merge juntae
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+hbi@DESKTOP-TMIDB99 MINGW64 ~/Documents/project (juntae|MERGING)
+$ git swtich main
+git: 'swtich' is not a git command. See 'git --help'.
+
+The most similar command is
+        switch
+
+hbi@DESKTOP-TMIDB99 MINGW64 ~/Documents/project (juntae|MERGING)
+$ git switch main
+fatal: cannot switch branch while merging
+Consider "git merge --quit" or "git worktree add".

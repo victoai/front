@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu{
+            height: 100px;
+            background-color: antiquewhite;           
+        }
+
+
+        .sub-item{
+            height: 0px;
+            transition: .5s;
+           
+            
+        }
+
+        .sub-item-hover{
+            height: 400px;
+            background-color: rgb(73, 73, 207);
+
+            
+            position: fixed;
+            left:0px;
+            width: 100%;
+            
+
+        }
+
+        .visual{
+            height: 500px;
+            background-color: red;
+            position: relative;
+            top:90px;
+        }
+
+        .header{
+            width: 1200px;
+            position: absolute;
+            top:0px;            
+            left:50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+                       
+        }
+
+
+        span{
+            display: inline-block;
+    
+            height: 100px;
+            border:1px solid black;
+        }
+        
+    </style>
+
+    <script>
+        function show(){
+             let  sub = document.querySelector(".sub-item");
+             sub.classList.add( "sub-item-hover");
+        }
+
+
+        function hide(){
+             let  sub = document.querySelector(".sub-item");
+             sub.classList.remove( "sub-item-hover");
+        }
+
+
+
+    </script>
+</head>
+<body>
+<div class="header"  onmouseover="show()"   onmouseout="hide()">
+
+    <div class="menu">
+        <span  >aaaa</span> <span >bbbb</span><span  >cccc</span>
+   </div>
+
+   <!--하위메뉴-->
+   <div class="sub-item">
+
+   </div>
+</div>
+
+    
+
+    <div class="visual">visual 영역</div>
+</body>
+</html>

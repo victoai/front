@@ -1,0 +1,13 @@
+
+setInterval(  function(value) {  console.log( value)  } , 1000 , "hello");
+
+
+function myFunction (p1, p2) {
+   
+}
+
+setInterval( myFunction, 주기,   값1, 값2 );
+
+
+
+

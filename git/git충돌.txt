@@ -1,0 +1,14 @@
+ 
+git 충돌
+
+
+1. 충돌확인  git status 
+2. 충돌이 발생한 파일을 편집하고 원하는 변경내용으로 수정
+3. git add . 명령으로   staging  
+4. git commit  -m  "충돌해결"
+
+충돌후에   branch 전환할 수 있음
+main branch 전환
+###
+git  switch main   
+

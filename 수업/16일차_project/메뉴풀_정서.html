@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+        .menu{
+            width: 1200px;
+            display: flex;
+            margin:  0  auto;
+            height: 100px;
+            background-color: aqua;
+        }
+         
+
+        .menu-item{
+            width: 100px;
+            height: 30px;
+        }
+
+
+        .menu-item  >  ul{
+           
+            height: 0px;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+
+        .menu:hover  .sub-menu{
+            display: block;
+
+            position: fixed;
+            top:100px;
+            left: 0px;
+            width: 100%;
+            background-color: blanchedalmond;
+            height: 300px;     
+        
+        
+        } 
+
+
+            .sub-menu > li {
+                width: 1200px;
+                margin:  0 auto;
+               
+                display: flex;
+                height: 400px;
+                background-color: blueviolet;
+                
+            }
+
+
+            .sub-menu > li  ul{
+                width: 200px;
+                margin-left: 30px;
+            }
+
+            .title{
+                display: block;
+                height: 100px;
+            }
+    </style>
+</head>
+<body>
+    
+
+
+    <ul  class="menu">
+        <li  class="menu-item"> <span class="title">메뉴</span>
+
+            <ul class="sub-menu">
+                <li>하위
+                      <ul>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                      <ul>
+                        <li>bbb</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                      <ul>
+                        <li>ccc</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                </li>                 
+             
+            </ul>
+
+        </li>
+        <li  class="menu-item"><span class="title">메뉴</span>
+            <ul class="sub-menu">
+                <li>하위
+                      <ul>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                      <ul>
+                        <li>bbb</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                      <ul>
+                        <li>ccc</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                </li>                 
+             
+            </ul>
+        </li>
+        <li  class="menu-item"><span class="title">메뉴</span>
+
+            <ul class="sub-menu">
+                <li>하위
+                      <ul>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                      <ul>
+                        <li>bbb</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                      <ul>
+                        <li>ccc</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                        <li>aaaa</li>
+                      </ul>
+                </li>                 
+             
+            </ul>
+
+        </li>
+    </ul>
+</body>
+</html>
