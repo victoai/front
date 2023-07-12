@@ -14,25 +14,28 @@
         }
 
 
+
+        /* 창 전체영역*/
         .container {
-         
+             width: 100%;         
             display: flex;
             align-items: center;   
             justify-content: center;
             min-height: 100vh; /* 화면의 높이를 최소한 100%로 설정 */
-            border:1px solid black;
+            border:1px solid black; 
 
-             position: relative;  
-           
+
+            position: relative;
        
           
         
             }
 
-            .content {
+            /* 실제 내용이 나올 영역*/
+            .inner {
                     /* 내용에 대한 스타일 설정 */
-                    width: 1200px;
-                    height: 500px;
+                    width: 1300px;
+                    min-height: 100vh; /* 화면의 높이를 최소한 100%로 설정 */
                     border:1px solid black;
                     background-image: url(https://tse4.mm.bing.net/th?id=OIP.8UxWwq2NAQNt-Vc5CfmaZwHaE8&pid=Api&P=0&h=180);
                     background-position: center;
@@ -46,10 +49,10 @@
 <body>
     
     <div class="container">
-        <div class="content">
+        <div class="inner">
           <!-- 내용 -->
         </div>
-      </div>
+   </div>
 
 
       <script>
@@ -60,7 +63,7 @@
            
             var container = document.querySelector(".container");
             var windowHeight = window.innerHeight;   /* 가시적인 창의 높이 */
-            var containerHeight = container.offsetHeight;
+            var containerHeight = container.offsetHeight;  
 
             /* 지금은 두 개의 값이 거의 같다*/
             var scrollY = window.scrollY;
