@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            height: 5000px;
+        }
+        .container {
+         
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*min-height: 100vh; /* 화면의 높이를 최소한 100%로 설정 */
+
+            position: relative;
+          
+        
+            }
+
+            .content {
+                    /* 내용에 대한 스타일 설정 */
+                    width: 1200px;
+                    height: 100px;
+                    border:1px solid black;
+                   
+                  
+            }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content">
+          <!-- 내용 -->
+        </div>
+      </div>
+
+
+      <script>
+        window.addEventListener("scroll", centerContent);
+
+        function centerContent() {
+           
+           
+            var container = document.querySelector(".container");
+            var windowHeight = window.innerHeight;
+            var containerHeight = container.offsetHeight;
+
+            /* 지금은 두 개의 값이 거의 같다*/
+            var scrollY = window.scrollY;
+
+            var topOffset = Math.max((windowHeight - containerHeight) / 2, 0);
+            var targetTop = scrollY + topOffset;
+
+            container.style.top = targetTop + "px";
+
+
+
+
+            console.log(  container);
+            console.log("windowHeight="+ windowHeight);
+            console.log("containerHeight="+ containerHeight);
+            console.log( "scrollY="+ scrollY);
+
+            console.log("topOffset"  +topOffset);
+            console.log("targetTop"+ targetTop);
+
+
+        } 
+
+      </script>
+      
+</body>
+</html>
