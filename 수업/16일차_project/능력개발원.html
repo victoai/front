@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+*{
+            padding: 0px;
+            margin: 0px;
+
+        }
+        .header{
+            height: 100px;
+            background-color: bisque;
+
+            position: fixed; 
+            width: 100%;
+            top:0px;
+
+            transition: .5s;
+
+           
+           
+           
+        }
+
+        .inner{
+            width: 1200px;
+            height: 100px;
+            background-color: bisque;           
+            margin: 0 auto;
+            position: relative;
+        }
+
+
+        
+
+        ul{
+            list-style: none;
+        }
+
+        .menu{
+            
+            width: 1200px;
+
+            position: absolute;
+            display: flex;
+            bottom: 0px;
+           
+        }
+        
+        .menu >li{
+            width: 25%;
+            height: 50px;
+            text-align: center;
+           
+            border: 0.5px solid rgb(173, 164, 164);       
+            
+            
+        }
+
+        .menu >li > ul{
+           height: 0px;
+           overflow: hidden;
+           transition: 0.3s;
+           
+          
+        }
+
+        .menu:hover ul{
+            display: block;
+        }
+        .title{
+            display: block;
+            height: 50px;
+            line-height: 50px;
+             
+        }
+
+        .menu:hover  ul {
+            width: 100%;
+           
+            height: 360px;
+            border: 0.5px solid rgb(173, 164, 164);          
+            background-color: bisque;
+            text-align: center;
+            padding: 20px 0px;         
+           
+           
+        }
+        .menu:hover  ul li{
+            height: 50px;
+        }
+
+
+        .visual{
+            height: 800px;
+            background-color: aqua;
+        }
+
+
+        .menubar{
+            height: 50px;
+            background-color: blue;
+            border: 1px solid black;
+            position: fixed;
+            top:100px;
+            z-index: 999;
+            width: 100%;
+            color:white;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+    <script>
+        function aaa(){
+
+           let header  = document.querySelector(".header");
+           header.style.height="500px";
+           header.style.backgroundColor="bisque";
+           header.style.display="block";
+
+           let menubar  = document.querySelector(".menubar");
+           menubar.style.display="none";
+
+
+
+        }
+
+        function bbb(){
+            
+           let header  = document.querySelector(".header");
+           header.style.height="100px";
+           header.style.backgroundColor="bisque";
+
+           let menubar  = document.querySelector(".menubar");
+           menubar.style.display="block";
+
+
+          
+
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="inner">
+            <ul class="menu"  onmouseover=" aaa()"   onmouseout="bbb()">
+                <li>  <span class="title">상위메뉴</span>
+
+                    <ul>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                    </ul>
+                </li>
+                <li>  <span class="title">상위메뉴</span>
+                    
+                    <ul>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                    </ul>
+                </li>
+                <li>  <span class="title">상위메뉴</span>
+                    
+                    <ul>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                    </ul>
+                </li>
+                <li>  <span class="title">상위메뉴</span>
+                    
+                    <ul>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                    </ul>
+                </li>
+                <li>  <span class="title">상위메뉴</span>
+                    
+                    <ul>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                        <li>하위메뉴</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+  
+    <div class="visual"></div>
+    <div class="menubar"> 능력개발원</div>  
+</body>
+</html>
