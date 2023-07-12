@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // 고차함수 ( ) 
+
+       
+
+        // 1초 간격으로 이 함수를 실행해라 : setInterval
+
+
+        // 1. 함수를 만든다.
+        function aFunc(){
+            alert("보이는가");
+
+        } 
+
+
+        // 2. 익명으로 함수를 만든다.
+
+        
+        setTimeout( aFunc, 2000);    // ( 콜백함수 ,  1초 * 1000) 1초 이후에 콜백함수 실행해줘
+                                        //  (함수명)
+
+
+
+        setTimeout(   function(){
+            alert("제발 좀 나와라");
+        }  ,   4000);
+
+        // 화살표 함수
+        setTimeout( ()=> alert("아직한발남았다") , 7000);
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //setInterval 갤러리의 이미지가 1초간격으로 변경
+      //setTimeout(함수명,1000);
+      //1초 있다가 함수 실행해줘
+      let cnt=3;
+      test(bFunc  , cnt);
+
+      //콜백함수 연습
+      function test(f , cnt) {        //  콜백함수, 실행횟수 
+        for (let i = 0; i < cnt; i++) {
+          f(i);
+        }
+      }
+
+
+      function bFunc(i) {        
+        document.write(i + "회 실행<br>");
+      }
+    </script>
+</body>
+</html>

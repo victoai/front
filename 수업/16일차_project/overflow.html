@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            width: 300px;
+            height: 300px;
+            border:1px solid black;
+          /*  overflow: auto;    크기가 더 커 졌을 때  스크롤 발생*/
+          /* overflow-x: auto;      가로축만  스크롤발생 시킴*/
+            overflow: hidden;
+           
+        }
+
+
+        .wrap:hover > .item{
+            height: 400px;
+            width: 500px;
+            background-color: red;
+             
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="wrap">
+
+        <div class="item">
+            
+
+        </div>
+
+    </div>
+</body>
+</html>
