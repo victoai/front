@@ -80,9 +80,12 @@
 
     <script>
         let selectedIndex=0;
+
         function item_move(index){
-            selectedIndex=index;
-            alert(selectedIndex );
+        
+
+            alert( "selecedIndex=" + selectedIndex );
+            alert( "index="+ index );
 
             //초기화       
             if( selectedIndex != index)    {
@@ -120,7 +123,7 @@
             tit2.style.right="300px";
             txt.style.right="300px"; 
 
-
+            selectedIndex=index;
 
 
         } 
