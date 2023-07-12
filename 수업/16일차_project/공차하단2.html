@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        ul{
+            list-style: none;
+        }
+        .recipe{
+            width: 1500px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+
+          
+            background-color: #f5eee8;
+
+           
+        }
+
+        .recipe-item{
+            position: relative;
+        }
+
+        .tit1{
+            position: absolute;
+            right: 0px;
+            top:0px;
+
+            transition: .5s;
+        }
+
+        .tit2{
+            position: absolute;
+            right: 0px;
+            top:40px;
+            transition: .8s;
+        }
+
+        .txt{
+            position: absolute;
+            right: 0px;
+            top:80px;
+            transition: 1s;
+        }
+ 
+
+        img{
+             height: 300px;
+        }
+
+        .btn{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            display: block;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+           
+
+            border: 1px solid black;
+        }
+
+
+        .recipe-item{
+           
+        }
+     
+
+        .on{
+            display: block;
+        }
+
+    </style>
+
+    <script>
+        let selectedIndex=0;
+        function item_move(index){
+            selectedIndex=index;
+            alert(selectedIndex );
+
+            //초기화       
+            if( selectedIndex != index)    {
+                alert( "dfdfdfd");
+                item_origin(index);
+            }
+           
+            
+
+            let recipe_items  = document.querySelectorAll(".recipe .recipe-item");
+            //
+
+            recipe_items.forEach( function( item, i){
+                 if( index  ==i){
+                 item.classList.add("on");
+                 }
+                 else{
+                    item.classList.remove("on");
+                 }
+                 
+            });
+
+
+           // alert(recipe_items);
+            let recipe_item =recipe_items[index];
+           // alert( recipe_item);
+
+            let tit1= recipe_item.querySelector(".tit1");
+            let tit2= recipe_item.querySelector(".tit2");
+            let txt= recipe_item.querySelector(".txt"); 
+          
+
+
+            tit1.style.right="300px";
+            tit2.style.right="300px";
+            txt.style.right="300px"; 
+
+
+
+
+        } 
+
+        function item_origin(index){
+         
+
+            //초기화           
+           
+            
+
+            let recipe_items  = document.querySelectorAll(".recipe .recipe-item");
+            //
+
+           
+        
+
+
+           // alert(recipe_items);
+            let recipe_item =recipe_items[index];
+           // alert( recipe_item);
+
+            let tit1= recipe_item.querySelector(".tit1");
+            let tit2= recipe_item.querySelector(".tit2");
+            let txt= recipe_item.querySelector(".txt"); 
+          
+
+
+            tit1.style.right="0px";
+            tit2.style.right="0px";
+            txt.style.right="0px"; 
+
+
+
+
+        } 
+    </script>
+</head>
+<body>
+
+    <button  onclick="item_move(0)">  오리지널 레시피</button>
+    <button  onclick="item_move(1)">  밀크티</button>
+    <button  onclick="item_move(2)">  프롯티</button>
+    
+    <ul class="recipe">
+        <li class="recipe-item  on">
+            <img src="https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_recipe_img1.jpg" alt="" class="img">
+            <p class="tit1">TEA RECIPE - 티 레시피</p>
+            <p class="tit2">오리지널 티 - Original Tea</p>
+            <p class="txt">
+                티백이나 가루가 아닌 황실에 바치던 잎차만 골라 1도 1초도 어기지 않고 차마다<br>
+                다른 황금률로 우려 한 잔 한 잔 부드러움을 더해 만듭니다.
+            </p>
+            <a href="/brand/menu/product.php?c=001003" class="btn"><span>메뉴 보러가기</span></a>
+        </li>
+        <li class="recipe-item">
+            <img src="https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_recipe_img2.jpg" alt="" class="img">
+            <p class="tit1">TEA RECIPE - 티 레시피</p>
+            <p class="tit2">밀크티 - Milk Tea</p>
+            <p class="txt">
+                최적의 자연이 키워낸 입차만 골라 각 차종에 맞는 황금률로 우려 담백한 우유와<br>
+                허니, 카라멜 등 새로운 맛을 더해 만듭니다.
+            </p>
+            <a href="/brand/menu/product.php?c=001006" class="btn"><span>메뉴 보러가기</span></a>
+        </li>
+        <!-- <li>
+            <img src="/view/gongcha/images/brandmain/brand_main_recipe_img3.jpg" alt="" class="img" />
+            <p class="tit1">TEA RECIPE - 티 레시피</p>
+            <p class="tit2">티라떼 - Tea Latte</p>
+            <p class="txt">
+                티자연효소로 잘 발효된 블랙티만 골라 최적의 온도 95℃로 우려 홍차, 초콜릿, 타로,<br />
+                제주산 녹차와 따뜻한 우유를 더해 만듭니다.
+            </p>
+            <a href="/brand/menu/product.php?c=001005" class="btn"><span>메뉴 보러가기</span></a>
+        </li> -->
+        <!-- <li>
+            <img src="/view/gongcha/images/brandmain/brand_main_recipe_img4.jpg" alt="" class="img" />
+            <p class="tit1">TEA RECIPE - 티 레시피</p>
+            <p class="tit2">밀크폼&amp;치즈폼 – Milk Foam &amp; Cheese Foam</p>
+            <p class="txt">
+                프리미엄 잎차만 골라 차마다 다른 황금률로 우려<br>
+                달콤짭조름한 밀크폼 또는 치즈폼을 더해 만듭니다.
+            </p>
+            <a href="/brand/menu/product.php?c=001004" class="btn"><span>메뉴 보러가기</span></a>
+        </li> -->
+        <li class="recipe-item">
+            <img src="https://www.gong-cha.co.kr/view/gongcha/images/brandmain/brand_main_recipe_img1.jpg" alt="" class="img">
+            <p class="tit1">TEA RECIPE - 티 레시피</p>
+            <p class="tit2">프룻티 – Fruit Tea</p>
+            <p class="txt">
+                찻잎의 푸름을 간직한 녹차만 골라 최적의 온도 89℃로 우려<br>
+                달콤상큼한 과일을 더해 만듭니다.
+            </p>
+            <a href="/brand/menu/product.php?c=001007" class="btn"><span>메뉴 보러가기</span></a>
+        </li>
+    </ul>
+</body>
+</html>
+
+
