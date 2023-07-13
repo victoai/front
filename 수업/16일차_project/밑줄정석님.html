@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .menu {
+      width: 100px;
+      text-align: center;
+      position: relative;
+    }
+  
+    
+
+    .line {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: #c00e0e;
+      /* 줄의 색상을 원하는 색상으로 변경해주세요. */
+      transition: width 0.3s ease-in-out;
+      transform: translateX( -50%);
+    }
+
+    .menu:hover .line {
+      width: 100%;
+    }
+  </style>
+</head> 
+
+<body>
+ 
+
+
+  <div class="menu">커피
+    <div class="line"> </div>
+  </div>
+
+</body>
+</html>
